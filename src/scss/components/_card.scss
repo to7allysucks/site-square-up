@@ -1,0 +1,15 @@
+.card {
+  &__body {
+    background: red;
+    border-radius: var(--border-radius-default);
+    padding: var(--padding-block) var(--padding-inline);
+  }
+
+  &__title {
+    font-family: var(--font-family-title), sans-serif;
+  }
+
+  &__text {
+
+  }
+}

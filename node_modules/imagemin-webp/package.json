@@ -1,0 +1,41 @@
+{
+	"name": "imagemin-webp",
+	"version": "8.0.0",
+	"description": "WebP imagemin plugin",
+	"license": "MIT",
+	"repository": "imagemin/imagemin-webp",
+	"type": "module",
+	"exports": "./index.js",
+	"engines": {
+		"node": ">=14.16"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"compress",
+		"cwebp",
+		"image",
+		"imageminplugin",
+		"img",
+		"jpg",
+		"minify",
+		"optimize",
+		"png",
+		"tif",
+		"webp"
+	],
+	"dependencies": {
+		"cwebp-bin": "^8.0.0",
+		"exec-buffer": "^3.2.0",
+		"is-cwebp-readable": "^3.0.0"
+	},
+	"devDependencies": {
+		"ava": "^5.1.1",
+		"is-webp": "^2.0.0",
+		"xo": "^0.53.1"
+	}
+}
