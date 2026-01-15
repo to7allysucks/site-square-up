@@ -10,8 +10,21 @@
   /**  Скругления углов  */
   --border-radius-default: 20px;
 
+  --border-default: 1px solid var(--grey-15);
+
   /**  Основные цвета */
-  --main-color: #e3e3e3;
+  --accent-color: #9EFF00;
+  --background-color: #191919;
+
+  --black-100: #000000;
+  
+  --grey-60: #98989A;
+  --grey-20: #333333;
+  --grey-15: #262626;
+  --grey-12: #222222;
+  --grey-10: #1B1B1B;
+  
+  --light-color: #ffffff;
 
   /**  Шрифты */
   --font-family-title: "Open Sans";

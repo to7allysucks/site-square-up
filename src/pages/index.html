@@ -6,17 +6,80 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/main.css" />
-    <title>Document</title>
+    <title>SquareUp | Home</title>
 </head>
 <body>
-<h1>Карточки</h1>
-
-@@include('../components/_card.html', {
-"img": "./assets/images/cat1",
-"alt": "Изображение 1",
-"title": "Заголовок 1",
-"text": "Текст описания карточки 1"
+    
+@@include('../components/_header.html', {
+"link": "/",
+"is-active": "is-active",
+"img": "./assets/images/logo",
+"alt": "SquareUp logo",
 })
+
+<main>
+    @@include('../components/_hero-section.html', {
+    "link": "/",
+    "is-active": "is-active",
+    })
+
+    @@include('./_companies-section.html', {
+    })
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @@include('../components/_card.html', {
 "img": "./assets/images/cat1",

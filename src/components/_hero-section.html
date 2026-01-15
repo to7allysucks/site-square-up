@@ -1,0 +1,24 @@
+<section class="hero-section">
+    <h1 class="h1">A Digital Product Studio <br>that will Work</h1>
+    <div class="hero-section__promo">
+        <p class="promo__text">For <span class="promo__card">Startups</span>, 
+            <span class="promo__card">Enterprise leaders</span>, 
+            <span class="promo__card">Media & Publishers</span> and 
+            <span class="promo__card">Social Good</span></p>
+    </div>
+    <div class="buttons__wrapper">
+    @@include('./_button.html', {
+        "title": "Our Works",
+        "link": "#",
+        "block__element": "hero-section__button",
+        "block--modifier": "button--blur",
+        })
+
+    @@include('./_button.html', {
+        "title": "Contact Us",
+        "link": "#",
+        "block__element": "hero-section__button",
+        "block--modifier": "button--accent",
+        })
+    </div>
+</section>

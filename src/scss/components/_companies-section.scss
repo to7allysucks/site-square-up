@@ -1,0 +1,23 @@
+.companies-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 40px 0;
+    background-color: var(--grey-10);
+    border: var(--border-default);
+    gap: 20px;
+
+    &__count {
+        background-color: var(--background-color);
+        padding: 20px 34px;
+        border: var(--border-default);
+        border-radius: 100px;
+        position: absolute;
+        left: 39.2763%;
+        right: 39.2763%;
+        top: -20%;
+    }
+}

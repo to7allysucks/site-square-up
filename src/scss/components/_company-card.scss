@@ -1,0 +1,12 @@
+.company-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    max-width: 250px;
+
+    &__icon {
+        height: auto;
+    }
+}

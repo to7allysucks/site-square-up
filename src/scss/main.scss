@@ -12,7 +12,32 @@
 // ==== 4. Components ====
 @use 'components/button';
 @use 'components/card';
+@use 'components/header';
+@use 'components/hero-section';
+@use 'components/companies-section';
+@use 'components/company-card';
+
+* {
+  font-size: 18px;
+  font-family: Barlow, sans-serif;
+  font-weight: 400;
+  color: var(--light-color);
+}
 
 body {
-  background-color: var(--main-color);
+  background-color: var(--background-color);
+}
+
+main {
+  padding-inline: 162px;
+}
+
+h1, h2, h3,
+.h1, .h2, .h3 {
+  font-weight: 600;
+}
+
+h1, .h1 {
+  font-size: 68px;
+  margin-bottom: 40px;
 }

@@ -1,0 +1,47 @@
+.hero-section {
+    background-image: url(../../assets/images/heroSection.webp);
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 112px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-left: var(--border-default);
+    border-right: var(--border-default);
+
+    &__button {
+        padding: 18px 28px;
+        border-radius: 10px;
+    }
+
+    &__promo {
+        border: 1px solid var(--grey-15);
+        border-radius: 12px;
+        padding: 24px 40px;
+        background: rgba(36, 36, 36, 0.2);
+        backdrop-filter: blur(12px);
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+}
+
+.promo__text {
+    color: var(--grey-60);
+    font-size: 22px;
+    font-weight: 400;
+    gap: 6px;
+}
+
+.promo__card {
+    background-color: var(--grey-15);
+    color: var(--light-color);
+    padding: 12px 14px;
+    border: none;
+    border-radius: 8px;
+}

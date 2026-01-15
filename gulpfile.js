@@ -69,16 +69,6 @@ const imagesToWebp = () =>
     .pipe(webp({ quality: 80 }))
     .pipe(gulp.dest(paths.images.dest))
 
-const imagesToMobileWebp = () =>
-  gulp.src(paths.images.src, { encoding: false })
-    .pipe(responsive({
-      formats: [
-        { width: 640, rename: { suffix: "-sm" }, format: 'webp' },
-        { width: 1024, rename: { suffix: "-lg" }, format: 'webp' },
-      ]
-    }))
-    .pipe(gulp.dest(paths.images.dest));
-
 // Копирование ассетов
 export const assets = () =>
   gulp.src(paths.assets.src).pipe(gulp.dest(paths.assets.dest));
@@ -101,9 +91,8 @@ export const serve = () => {
   gulp.watch(paths.html.watch, html);
   gulp.watch(paths.assets.src, assets);
   gulp.watch(paths.images.src, imagesToWebp);
-  gulp.watch(paths.images.src, imagesToMobileWebp);
 };
 
 // Сборка
-export const build = gulp.series(clean, gulp.parallel(styles, html, assets, imagesToWebp, imagesToMobileWebp));
+export const build = gulp.series(clean, gulp.parallel(styles, html, assets, imagesToWebp));
 export default gulp.series(build, serve);

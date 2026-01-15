@@ -1,0 +1,22 @@
+<header class="header">
+    <div class="header__body">
+        <a href="@@link">
+            <img src="@@img.webp" alt="@@alt">
+        </a>    
+        <nav class="header__menu-list">
+            <li class="menu-list__item"><a href="/" class="menu-list__link @@is-active">Home</a></li>
+            <li class="menu-list__item"><a href="/" class="menu-list__link">Services</a></li>
+            <li class="menu-list__item"><a href="/" class="menu-list__link">Work</a></li>
+            <li class="menu-list__item"><a href="/" class="menu-list__link">Process</a></li>
+            <li class="menu-list__item"><a href="/" class="menu-list__link">About</a></li>
+            <li class="menu-list__item"><a href="/" class="menu-list__link">Careers</a></li>
+        </nav>
+
+        @@include('./_button.html', {
+        "title": "Contact Us",
+        "link": "#",
+        "block__element": "header__button",
+        "block--modifier": "button--accent",
+        })
+    </div>
+</header>
