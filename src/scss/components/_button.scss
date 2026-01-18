@@ -1,5 +1,5 @@
 .button {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 500;
     font-family: 'Barlow';
     text-align: center;
@@ -9,26 +9,26 @@
     &s__wrapper {
         display: flex;
         flex-direction: row;
-        gap: 13px;
-        margin-bottom: 275px;
+        gap: 1.3rem;
+        margin-bottom: 27.5rem;
     }
 
     &--accent {
         background-color: var(--accent-color);
         color: var(--grey-15);
-        border: 2px solid transparent;
+        border: 0.2rem solid transparent;
     }
 
     &--blur {
         color: var(--light-color);
         background-color: rgba(36, 36, 36, 0.2);
-        backdrop-filter: blur(12px);
-        border: 2px solid var(--grey-20);
+        backdrop-filter: blur(1.2rem);
+        border: 0.2rem solid var(--grey-20);
         transition: 0.3s;
 
         &:hover {
             background-color: rgba(36, 36, 36, 0.05);
-            backdrop-filter: blur(2px);
+            backdrop-filter: blur(0.2rem);
         }
     }
 }

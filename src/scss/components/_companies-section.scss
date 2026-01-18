@@ -5,20 +5,25 @@
     align-items: center;
     position: relative;
     width: 100%;
-    padding: 40px 0;
+    padding: 4rem 0;
     background-color: var(--grey-10);
     border: var(--border-default);
-    gap: 20px;
+    gap: 2rem;
 
     &__count {
         text-align: center;
         background-color: var(--background-color);
-        padding: 20px 34px;
+        padding: 2rem 3.4rem;
+        max-width: 28.6rem;
         border: var(--border-default);
-        border-radius: 100px;
+        border-radius: 10rem;
         position: absolute;
-        left: 39.2763%;
-        right: 39.2763%;
-        top: -20%; 
+        left: calc(50% - 14.3rem);
+        top: calc(-3.3rem);
     }
+}
+
+.count__text {
+    width: 100%;
+    font-weight: 500;
 }

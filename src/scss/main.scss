@@ -11,11 +11,11 @@
 
 // ==== 4. Components ====
 @use 'components/button';
-@use 'components/card';
 @use 'components/header';
 @use 'components/hero-section';
 @use 'components/companies-section';
 @use 'components/company-card';
+@use 'components/banner';
 
 html {
   font-size: 62.5%;
@@ -34,6 +34,7 @@ body {
 
 main {
   padding-inline: 16.2rem;
+  max-width: 159.6rem;
 }
 
 h1, h2, h3,
@@ -44,4 +45,9 @@ h1, h2, h3,
 h1, .h1 {
   font-size: 6.8rem;
   margin-bottom: 4rem;
+}
+
+.h2, h2 {
+  font-size: 4.8rem;
+  margin-bottom: 1rem;
 }

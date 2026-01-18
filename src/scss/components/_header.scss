@@ -1,6 +1,6 @@
 .header {
     display: flex;
-    padding: 20px 162px;
+    padding: 2rem 16.2rem;
     border-bottom: var(--border-default);
     background-color: var(--background-color);
     z-index: 100;
@@ -24,16 +24,16 @@
     }
 
     &__button {
-        padding: 16px 24px;
-        border-radius: 8px;
+        padding: 1.6rem 2.4rem;
+        border-radius: 0.8rem;
     }
 }
 
 .menu-list__link {
     color: var(--light-color);
     font-weight: 500;
-    border-radius: 8px;
-    padding: 14px 28px;
+    border-radius: 0.8rem;
+    padding: 1.4rem 2.8rem;
     transition: 0.4s;
 
     &:hover {

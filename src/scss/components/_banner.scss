@@ -1,0 +1,19 @@
+.banner {
+    padding: 12rem 0;
+    text-align: center;
+    border-left: var(--border-default);
+    border-right: var(--border-default);
+
+    &__text {
+        color: var(--grey-90);
+        letter-spacing: -0.6%;
+    }
+
+    &-intro {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../../assets/images/introBanner.webp);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+}

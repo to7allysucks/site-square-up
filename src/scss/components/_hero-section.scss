@@ -34,16 +34,16 @@
 .promo__text {
     display: flex;
     color: var(--grey-60);
-    font-size: 22px;
+    font-size: 2.2rem;
     font-weight: 400;
-    gap: 6px;
+    gap: 0.6rem;
     align-items: center;
 }
 
 .promo__card {
     background-color: var(--grey-15);
     color: var(--light-color);
-    padding: 12px 14px;
+    padding: 1.2rem 1.4rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 0.8rem;
 }
