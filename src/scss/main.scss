@@ -38,9 +38,12 @@ body {
   background-color: var(--background-color);
 }
 
+
 main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   padding-inline: 16.2rem;
-  max-width: 159.6rem;
 }
 
 h1, h2, h3,
