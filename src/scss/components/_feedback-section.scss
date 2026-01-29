@@ -17,13 +17,56 @@
     border-right: var(--border-default);
     padding: 8rem;
 
+    & input {
+        background-color: transparent;
+    }
+
+    &__title {
+        width: 100%;
+        line-height: 150%;
+    }
+
+    &__input-name {
+        padding: 2.4rem 4rem;
+        border-radius: 0.8rem;
+    }
+    
+    &__input-email {
+        padding: 2.4rem 4rem;
+        border-radius: 0.8rem;
+    }
+
+    &__input-wrapper {
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 2fr;
+        width: 100%;
+    }
+
     &__input-check {
         display: flex;
         grid-column: span 2;
+        padding: 4rem;
+        border-radius: 1.2rem;
+        width: 100%;
     }
 
-    &__slab { 
+    &__*** {
+        padding: 4rem;
+        border-radius: 1.2rem;
+    }
+
+
+    &__input-message {
+        padding: 2.4rem 4rem;
+        border-radius: 0.8rem;
+    }
+
+    &__slab {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--grey-11);
         border: var(--border-default);
-        background-color: rgba(36, 36, 36, 0.5);
+        width: 100%;
     }
 }
