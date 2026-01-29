@@ -1,0 +1,27 @@
+.card {
+    border: var(--border-default);
+
+
+    &__content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        max-width: 43.2rem;
+    }
+
+    &__description {
+    max-width: 100%;
+    line-height: 133%;
+    letter-spacing: -0.01em; 
+    font-weight: 300;
+    }
+}
+

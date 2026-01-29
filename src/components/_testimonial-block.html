@@ -1,0 +1,23 @@
+<div class="testimonial-block">
+    <div class="testimonial-block__text">
+        <h4 class="h4 testimonial-block__title">@@title</h4>
+        <p class="testimonial-block__description">@@description</p>
+    </div>    
+    <div>
+        <div class="testimonial-block-extra">
+            <div class="testimonial-block-extra__content">
+                <img src="@@img.webp" alt="@@alt" class="testimonial-block__person-image">
+                <div class="testimonial-block-extra__text">
+                    <p class="testimonial-block-extra__title">@@name</p>
+                    <p class="testimonial-block-extra__description">@@extra-desc</p>
+                </div>    
+            </div>
+            @@include('./_button.html', {
+            "title": "Open Website",
+            "link": "/",
+            "block__element": "testimonial-block__button",
+            "block--modifier": "button--grey",
+            })
+        </div>
+    </div>
+</div>
