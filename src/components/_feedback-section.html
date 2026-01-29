@@ -20,13 +20,15 @@
                 <label for="">
                     <input type="checkbox" id="mobile-app" name="mobile-app">Mobile App Design
                 </label>
-                <label for="">
+                <label for=""> 
                     <input type="checkbox" id="others" name="others">Others
                 </label> 
             </div>       
         </div>
-        <div class="feedback-wrapper__*** feedback-wrapper__slab">
-            <!-- . . . -->
+        <div class="feedback-wrapper__input-range feedback-wrapper__slab">
+            <h6 class="feedback-wrapper__title h6">Your Budget</h6>
+            <p class="feedback-wrapper__description">Slide to indicate your budget range</p>
+            <input type="range" id="budget" name="budget">
         </div>
         <div class="feedback-wrapper__input-message feedback-wrapper__slab">
             <input type="text" id="message" name="message" placeholder="Type here">
@@ -36,6 +38,7 @@
         "link": "#",
         "block__element": "feedback-section__button",
         "block--modifier": "button--accent",
+        "block__button-form": "feedback-section__button-form"
         })
     </div>
 </section>

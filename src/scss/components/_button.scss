@@ -5,6 +5,16 @@
     text-align: center;
     border: none;
     cursor: pointer;
+    transition: transform 0.4s;
+
+    &-form {
+        grid-column: span 2;
+
+    }
+
+    &:hover {
+        transform: scale(1.05);
+    }
 
     &s__wrapper {
         display: flex;
