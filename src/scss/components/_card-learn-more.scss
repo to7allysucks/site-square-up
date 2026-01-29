@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 57.7rem;
     border: var(--border-default);
     padding: 5rem;
     gap: 4rem;
@@ -19,6 +20,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    justify-content: space-between;
 }
 
 .card__text {
@@ -29,6 +31,9 @@
 }
 
 .card__description {
+    max-width: 100%;
+    line-height: 133%;
+    letter-spacing: -0.01em; 
     font-weight: 300;
 }
 

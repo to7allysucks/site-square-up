@@ -3,7 +3,7 @@
     grid-template-columns: repeat(6, 1fr);
     align-items: center;
     position: relative;
-    width: 100%;
+    max-width: 100%;
     padding: 4rem 0;
     background-color: var(--grey-10);
     border: var(--border-default);
