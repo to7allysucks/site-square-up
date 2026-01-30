@@ -1,0 +1,17 @@
+.frame {
+    display: flex;
+    flex-direction: column;
+    border: var(--border-default);
+    width: 50%;
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    &__description {
+        font-size: 2rem;
+    }
+}

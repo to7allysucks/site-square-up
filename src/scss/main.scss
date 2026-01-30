@@ -19,10 +19,12 @@
 @use 'components/icon';
 @use 'components/card';
 @use 'components/services-section';
+@use 'components/frame';
+@use 'components/review-section';
 @use 'components/testimonial-block';
 @use 'components/testimonial-section';
-
 @use 'components/feedback-section';
+
 
 html {
   font-size: 62.5%;

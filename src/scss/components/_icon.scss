@@ -9,15 +9,18 @@
     justify-content: center;
     align-items: center;
 
-    &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(229deg, rgba(158, 255, 0, 0.075), rgba(158, 255, 0, 0) 32%);
-        z-index: 1;
-        border-radius: 1rem;
-    }
+
+    &--green {
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(229deg, rgba(158, 255, 0, 0.075), rgba(158, 255, 0, 0) 32%);
+            z-index: 1;
+            border-radius: 1rem;
+        }
+    }    
 }
