@@ -30,7 +30,7 @@ const paths = {
     dest: 'dist/assets/',
   },
   images: {
-    src: 'src/images/**/*',
+    src: 'src/assets/images/**/*',
     dest: 'dist/assets/images',
   }
 };
