@@ -39,6 +39,14 @@ html {
   // outline: 2px solid green;
 }
 
+p::selection {
+  color: var(--accent-color) 
+}
+
+p::-moz-selection {
+    color: var(--accent-color)
+  }
+
 body {
   background-color: var(--background-color);
 }
@@ -59,27 +67,76 @@ h1, h2, h3,
 h1, .h1 {
   font-size: 6.8rem;
   margin-bottom: 4rem;
+
+  &::selection {
+    color: var(--accent-color)
+  }
+
+  &::-moz-selection {
+    color: var(--accent-color)
+  }
+
 }
 
 .h2, h2 {
   font-size: 4.8rem;
   margin-bottom: 1rem;
+
+  &::selection {
+    color: var(--accent-color)
+  }
+
+  &::-moz-selection {
+    color: var(--accent-color)
+  }
 }
 
 .h3, h3 {
   font-size: 3rem;
+
+  &::selection {
+    color: var(--accent-color)
+  }
+  
+  &::-moz-selection {
+    color: var(--accent-color)
+  }
 }
 
 .h4, h4 {
   font-size: 2.6rem;
+
+  &::selection {
+    color: var(--accent-color)
+  }
+
+  &::-moz-selection {
+    color: var(--accent-color)
+  }
 }
 
 .h5, h5 {
   font-size: 2.8rem;
+
+  &::selection {
+    color: var(--accent-color)
+  }
+
+  &::-moz-selection {
+    color: var(--accent-color)
+  }
 }
 
 .h6, h6 {
   font-size: 2.2rem;
+
+  &::selection {
+    color: var(--accent-color)
+  }
+
+  &::-moz-selection {
+    color: var(--accent-color)
+  }
 }
 
 input {
