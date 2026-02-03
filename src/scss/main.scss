@@ -151,4 +151,11 @@ input {
 
 img {
   object-fit: cover;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
