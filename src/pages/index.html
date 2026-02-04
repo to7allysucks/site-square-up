@@ -10,59 +10,57 @@
 </head>
 <body>
     
-@@include('../components/_header.html', {
-"link": "/",
-"is-active": "is-active",
-"img": "./assets/images/logo",
-"alt": "SquareUp logo",
-})
-
-<main>
-    @@include('../components/_hero-section.html', {
-    "link": "/",
-    "is-active": "is-active",
+    @@include('../components/_header.html', {
+        "link": "/",
+        "is-active": "is-active",
+        "img": "./assets/images/header-logo",
+        "alt": "SquareUp logo",
     })
 
-    @@include('./_companies-section.html', {
-    })
-
-    @@include('../components/_banner.html', {
-    "type": "intro",
-    "title": "Our Services",
-    "text": "Transform your brand with our innovative digital solutions that captivate and engage your audience.",
-    })
-
-    @@include('./_services-section.html', {
+    <main>
+        @@include('../components/_hero-section.html', {
+            "link": "/",
+            "is-active": "is-active",
         })
 
-    @@include('../components/_banner.html', {
-    "type": "undermiddle",
-    "title": "What our Clients say About us",
-    "text": "At SquareUp, we take pride in delivering exceptional digital products and services that drive success for our clients. Here's what some of our satisfied clients have to say about their experience working with us",
-    })
+        @@include('./_partners-section.html', {
+        })
 
-    @@include('../components/_review-section.html', {
-    })
+        @@include('../components/_banner.html', {
+            "type": "wave-light",
+            "title": "Our Services",
+            "text": "Transform your brand with our innovative digital solutions that captivate and engage your audience.",
+        })
+        @@include('./_services-section.html', {
+        })
+
+        @@include('../components/_banner.html', {
+            "type": "wave-textured",
+            "title": "Why Choose SquareUp?",
+            "text": "Experience excellence in digital craftsmanship with our team of skilled professionals dedicated to delivering exceptional results.",
+        })
+
+        @@include('../components/_review-section.html', {
+        })
         
-    @@include('../components/_banner.html', {
-    "type": "middle",
-    "title": "Why Choose SquareUp?",
-    "text": "Experience excellence in digital craftsmanship with our team of skilled professionals dedicated to delivering exceptional results.",
-    })
+        @@include('../components/_banner.html', {
+            "type": "wave-dark-sharp",
+            "title": "What our Clients say About us",
+            "text": "At SquareUp, we take pride in delivering exceptional digital products and services that drive success for our clients. Here's what some of our satisfied clients have to say about their experience working with us",
+        })
 
-    @@include('../components/_testimonial-section.html', {
-    })
+        @@include('../components/_testimonial-section.html', {
+        })
 
-    @@include('../components/_banner.html', {
-    "type": "last",
-    "title": "Frequently Asked Questions",
-    "text": "Still you have any questions? Contact our Team via hello@squareup.com",
-    })
+        @@include('../components/_banner.html', {
+            "type": "wave-smooth-green",
+            "title": "Frequently Asked Questions",
+            "text": "Still you have any questions? Contact our Team via hello@squareup.com",
+        })
 
-
-    @@include('../components/_feedback-section.html', {
-    })
-</main>
+        @@include('../components/_feedback-section.html', {
+        })
+    </main>
 
 
 

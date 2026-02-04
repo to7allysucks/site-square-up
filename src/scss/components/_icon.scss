@@ -1,9 +1,10 @@
 .icon {
+    display: flex;
     background: linear-gradient(#242424, transparent);
     border: var(--border-default);
     border-radius: 1rem;
-    max-width: 8.8rem;
-    max-height: 8.8rem;
+    width: 8.8rem;
+    height: 8.8rem;
     padding: 2.4rem;
     position: relative;
     justify-content: center;
