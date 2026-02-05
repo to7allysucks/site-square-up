@@ -11,6 +11,9 @@ import webp from 'gulp-webp';
 import responsive from 'gulp-sharp-responsive';
 import newer from "gulp-newer";
 
+import babel from 'gulp-babel';
+import terser from 'gulp-terser';
+
 const sass = gulpSass(dartSass);
 const bs = browserSync.create();
 
@@ -32,6 +35,12 @@ const paths = {
   images: {
     src: 'src/assets/images/**/*',
     dest: 'dist/assets/images',
+  },
+
+  scripts: {
+    src: 'src/assets/js/**/*.js',
+    dest: 'dist/assets/js/',
+    watch: 'src/assets/js/**/*.js',
   }
 };
 
@@ -63,11 +72,23 @@ export const styles = () =>
     .pipe(gulp.dest(paths.styles.dest))
     .pipe(bs.stream());
 
+export const scripts = () =>
+  gulp
+    .src(paths.scripts.src)
+    .pipe(
+      babel({
+        presets: ['@babel/preset-env'],
+      })
+    )
+    .pipe(terser())
+    .pipe(gulp.dest(paths.scripts.dest))
+    .pipe(bs.stream());
+
 const imagesToWebp = () =>
   gulp.src(paths.images.src, { encoding: false })
     .pipe(newer(paths.images.dest))
     .pipe(webp({ quality: 80 }))
-    .pipe(gulp.dest(paths.images.dest))
+    .pipe(gulp.dest(paths.images.dest));
 
 // Копирование ассетов
 export const assets = () =>
@@ -91,8 +112,9 @@ export const serve = () => {
   gulp.watch(paths.html.watch, html);
   gulp.watch(paths.assets.src, assets);
   gulp.watch(paths.images.src, imagesToWebp);
+  gulp.watch(paths.scripts.watch, scripts);
 };
 
 // Сборка
-export const build = gulp.series(clean, gulp.parallel(styles, html, assets, imagesToWebp));
+export const build = gulp.series(clean, gulp.parallel(styles, html, assets, imagesToWebp, scripts));
 export default gulp.series(build, serve);
