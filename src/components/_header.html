@@ -4,19 +4,19 @@
             <img src="@@img.svg" alt="@@alt" draggable="false">
         </a>    
         <nav class="header__menu-list">
-            <li class="menu-list__item"><a href="/" class="menu-list__link @@is-active">Home</a></li>
-            <li class="menu-list__item"><a href="/" class="menu-list__link">Services</a></li>
-            <li class="menu-list__item"><a href="/" class="menu-list__link">Work</a></li>
-            <li class="menu-list__item"><a href="/" class="menu-list__link">Process</a></li>
-            <li class="menu-list__item"><a href="/" class="menu-list__link">About</a></li>
-            <li class="menu-list__item"><a href="/" class="menu-list__link">Careers</a></li>
+            <li class="menu-list__item"><a href="/" class="menu-list__link @@home">Home</a></li>
+            <li class="menu-list__item"><a href="services.html" class="menu-list__link @@services">Services</a></li>
+            <li class="menu-list__item"><a href="work.html" class="menu-list__link @@work">Work</a></li>
+            <li class="menu-list__item"><a href="process.html" class="menu-list__link @@process">Process</a></li>
+            <li class="menu-list__item"><a href="about.html" class="menu-list__link @@about">About</a></li>
+            <li class="menu-list__item"><a href="careers.html" class="menu-list__link @@careers">Careers</a></li>
         </nav>
 
         @@include('./_button.html', {
-        "title": "Contact Us",
-        "link": "#",
-        "block__element": "header__button",
-        "block--modifier": "button--accent",
-        })
+            "title": "Contact Us",
+            "link": "#",
+            "block__element": "header__button",
+            "block--modifier": "button--accent",
+            })
     </div>
 </header>
