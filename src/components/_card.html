@@ -1,19 +1,19 @@
 <div class="@@block__card card">
-    @@include('./_icon.html', {
-        "img": "@@card__img",
-        "alt": "@@card__title",
-        "icon--modifier": "@@icon--modifier",
-        })
     <div class="card__content">
+        @@include('./_icon.html', {
+            "img": "@@card__img",
+            "alt": "@@card__title",
+            "icon--modifier": "@@icon--modifier",
+            })
         <div class="card__text">
             <h3 class="card__title h3">@@card__title</h3>
             <p class="card__description">@@card__description</p>
         </div>
+    </div>    
         @@include('./_button.html', {
             "title": "Learn More",
             "link": "/",
             "block__element": "services-section__button",
             "block--modifier": "button--grey",
             })
-    </div>
 </div>
