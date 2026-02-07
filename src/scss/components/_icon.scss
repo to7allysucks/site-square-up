@@ -10,6 +10,12 @@
     justify-content: center;
     align-items: center;
 
+    &--small {
+        width: 6.4rem;
+        height: 6.4rem;
+        padding: 2rem;
+    }
+        
     &--green {
         &::after {
             content: '';

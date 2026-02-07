@@ -16,6 +16,7 @@
 
     &__menu-list {
         display: flex;
+        gap: 3rem;
     }
 
     &__button {
@@ -28,16 +29,16 @@
     color: var(--light-color);
     font-weight: 500;
     border-radius: 0.8rem;
-    padding: 1.4rem 2.8rem;
     transition: 0.33s;
 
     &:hover {
-        background-color: var(--grey-12);
-        transform: scale(1.1);
+        color: var(--accent-color);
     }
 }
 
 .is-active {
     font-weight: 600;
     background-color: var(--grey-15);
+    padding: 1.4rem 2.8rem;
+    
 }

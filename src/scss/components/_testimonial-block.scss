@@ -25,6 +25,10 @@
         max-width: 92%;
         color: var(--green);
         margin-bottom: 2.4rem;
+
+        &::selection {
+            background-color: var(--grey-12)
+        }
     }
 
     &__description {

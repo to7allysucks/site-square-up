@@ -1,7 +1,9 @@
 .feedback-section {
     display: flex;
     width: 100%;
-    border: var(--border-default);
+    border-top: var(--border-default);
+    border-left: var(--border-default);
+    border-right: var(--border-default);
     padding-inline: 26.8rem;
     
     &__button {
