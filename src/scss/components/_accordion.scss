@@ -52,6 +52,7 @@
         grid-template-columns: 1fr 1fr;
         border: var(--border-default);
     }
+    
     &__details[open] &__title  {
         color: var(--green-70);
     }
