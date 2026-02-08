@@ -14,12 +14,15 @@
         width: 6.4rem;
         height: 6.4rem;
         padding: 2rem;
+        justify-content: center;
+        align-items: center;
     }
 
     &--medium {
-        width: 8rem;
+        max-width: 8rem;
         height: 8rem;
         padding: 2rem;
+        width: 100%;
     }
 
     &__title {

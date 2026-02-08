@@ -1,6 +1,6 @@
 .accordion {
     display: flex;
-    width: 50%;
+    width: 100%;
     flex-direction: column;
     border: var(--border-default);
     position: relative;
@@ -24,10 +24,10 @@
         gap: 3rem;
         align-items: center;
         font-weight: 500;
+        max-width: 75%;
     }
 
     &__content {
-        background-color: var(--background-color);
         display: grid;
         grid-template-rows: 0fr;
         transition-duration: 0.3s;
@@ -43,9 +43,8 @@
     }
 
     &-section {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         border: var(--border-default);
     }
     &__details[open] &__title  {
@@ -63,4 +62,10 @@
     &__details[open] svg path{
         fill: var(--accent-color)
     }
+}
+
+.empty-cell {
+    min-height: 8rem;
+    border-left: var(--border-default);
+    border-right: var(--border-default);
 }
