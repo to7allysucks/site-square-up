@@ -1,0 +1,142 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  font-size: 1.8rem;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+  color: var(--light-color);
+  box-sizing: border-box;
+}
+
+.transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+  transform: translateY(2rem);
+}
+
+p::selection {
+  color: var(--accent-color) 
+}
+
+p::-moz-selection {
+    color: var(--accent-color)
+  }
+
+body {
+  background-color: var(--background-color);
+}
+
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 16.2rem;
+}
+
+h1, h2, h3,
+.h1, .h2, .h3 {
+  font-weight: 600;
+}
+
+h1, .h1 {
+  font-size: 6.8rem;
+  margin-bottom: 4rem;
+
+  &::selection {
+    color: var(--accent-color)
+  }
+
+  &::-moz-selection {
+    color: var(--accent-color)
+  }
+
+}
+
+.h2, h2 {
+  font-size: 4.8rem;
+  margin-bottom: 1rem;
+
+  &::selection {
+    color: var(--accent-color)
+  }
+
+  &::-moz-selection {
+    color: var(--accent-color)
+  }
+}
+
+.h3, h3 {
+  font-size: 3rem;
+
+  &::selection {
+    color: var(--accent-color)
+  }
+  
+  &::-moz-selection {
+    color: var(--accent-color)
+  }
+}
+
+.h4, h4 {
+  font-size: 2.6rem;
+
+  &::selection {
+    color: var(--accent-color)
+  }
+
+  &::-moz-selection {
+    color: var(--accent-color)
+  }
+}
+
+.h5, h5 {
+  font-size: 2.8rem;
+
+  &::selection {
+    color: var(--accent-color)
+  }
+
+  &::-moz-selection {
+    color: var(--accent-color)
+  }
+}
+
+.h6, h6 {
+  font-size: 2.2rem;
+
+  &::selection {
+    color: var(--accent-color)
+  }
+
+  &::-moz-selection {
+    color: var(--accent-color)
+  }
+}
+
+input {
+  background-color: var(--background-color);
+  border: none;
+
+  &::placeholder {
+    color: var(--grey-40);
+  }
+
+}
+
+img {
+  object-fit: cover;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
