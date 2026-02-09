@@ -1,15 +1,13 @@
-// ==== 1. Utils ====
-@use 'utils/variables';
+@use 'utilities/variables';
+@use 'ulitities/mixins';
 
-// ==== 2. Base styles ====
+@use 'vendors/normalize';
+
 @use 'base/reset';
 @use 'base/typography';
-@use 'base/layout';
 
-// ==== 3. Layout ====
 @use 'layout/container';
 
-// ==== 4. Components ====
 @use 'components/button';
 @use 'components/header';
 @use 'components/hero-section';
@@ -25,6 +23,12 @@
 @use 'components/feedback-section';
 @use 'components/footer';
 @use 'components/accordion';
+
+@use 'pages/home';
+
+@use 'themes/theme';
+@use 'themes/dark';
+
 
 html {
   font-size: 62.5%;
