@@ -1,7 +1,7 @@
 @use 'utilities' as *;
 
 .hero-section {
-    background-image: url(../../assets/images/banners/hero-section-background.svg);
+    background-image: url("../../assets/images/banners/hero-section-background.svg");
     background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -23,7 +23,7 @@
         border: 0.1rem solid $color-grey-15;
         border-radius: 1.2rem;
         padding: 2.4rem 4rem;
-        background: rgba(36, 36, 36, 0.2);
+        background: rgb(36, 36, 36, 0.2);
         backdrop-filter: blur(1.2rem);
         text-align: center;
         display: flex;

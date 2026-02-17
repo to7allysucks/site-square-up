@@ -23,8 +23,7 @@
 
 .feedback-wrapper {
     display: grid;
-    row-gap: 4rem;
-    column-gap: 4rem;
+    gap: 4rem;
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
     border-left: $border-default;
@@ -58,7 +57,7 @@
             border-bottom: 0.1rem solid $color-grey-20;
 
             &:focus {
-                padding: 0.6rem 0.6rem;
+                padding: 0.6rem;
                 border-bottom: 0.1rem solid $color-grey-20;
                 border-radius: 1rem;
                 outline: none;
@@ -79,7 +78,7 @@
             border-bottom: 0.1rem solid $color-grey-20;
 
             &:focus {
-                padding: 0.6rem 0.6rem;
+                padding: 0.6rem;
                 border-bottom: 0.1rem solid $color-grey-20;
                 border-radius: 1rem;
                 outline: none;
@@ -91,8 +90,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 100%;
-        row-gap: 2.4rem;
-        column-gap: 2rem;
+        gap: 2.4rem 2rem;
     }
 
     &__input-check {
@@ -187,7 +185,7 @@
             margin-bottom: 4rem;
 
             &:focus {
-                padding: 0.6rem 0.6rem;
+                padding: 0.6rem;
                 border-bottom: 0.1rem solid $color-grey-20;
                 border-radius: 1rem;
                 outline: none;

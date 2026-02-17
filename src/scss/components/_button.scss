@@ -3,7 +3,7 @@
 .button {
     font-size: 1.8rem;
     font-weight: 500;
-    font-family: 'Barlow', sans-serif;
+    font-family: Barlow, sans-serif;
     text-align: center;
     border: none;
     cursor: pointer;
@@ -38,13 +38,13 @@
 
     &--blur {
         color: $color-light;
-        background-color: rgba(36, 36, 36, 0.2);
+        background-color: rgb(36, 36, 36, 0.2);
         backdrop-filter: blur(1.2rem);
         border: 0.2rem solid $color-grey-20;
         transition: 0.3s;
 
         &:hover {
-            background-color: rgba(36, 36, 36, 0.05);
+            background-color: rgb(36, 36, 36, 0.05);
             backdrop-filter: blur(0.2rem);
         }
     }
