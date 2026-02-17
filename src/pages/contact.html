@@ -16,7 +16,15 @@
     })
     
     <main id="swup" class="transition-fade">
-        
+        @@include('../components/_banner.html', {
+        "type": "wave-smooth-green",
+        "title": "Contact Us",
+        "text": "Get in touch with us today and let us help you with any questions or inquiries you may have.",
+        })
+        @@include('../components/_contact-section.html', {
+        })
+        @@include('../components/_feedback-section.html', {
+        })
     </main>
     @@include('../components/_footer.html', {
         "img": "./assets/images/full-logo",

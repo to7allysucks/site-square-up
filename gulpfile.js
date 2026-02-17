@@ -7,9 +7,6 @@ import cleanCSS from 'gulp-clean-css';
 import autoprefixer from 'gulp-autoprefixer';
 import htmlmin from 'gulp-htmlmin';
 import browserSync from 'browser-sync';
-import webp from 'gulp-webp';
-import responsive from 'gulp-sharp-responsive';
-import newer from "gulp-newer";
 
 import babel from 'gulp-babel';
 import terser from 'gulp-terser';
@@ -102,8 +99,8 @@ export const lintStyles = async () => {
     formatter: 'string',
   });
 
-  if (result.output) {
-    console.log(result.output);
+  if (result.report) {
+    console.log(result.report);
   }
 
   if (result.errored) {
@@ -123,8 +120,8 @@ export const lintStylesDev = async () => {
     formatter: 'string',
   });
 
-  if (result.output) {
-    console.log(result.output);
+  if (result.report) {
+    console.log(result.report);
   }
 };
 
