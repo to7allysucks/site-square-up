@@ -1,0 +1,23 @@
+@use 'utilities' as *;
+
+.contacts-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: $border-default;
+    gap: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-grey-15;
+    padding: 1.4rem 2rem;
+    border-radius: 0.6rem;
+    gap: 1.4rem;
+}
