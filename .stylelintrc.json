@@ -1,0 +1,24 @@
+{
+  "extends": "stylelint-config-standard-scss",
+  "rules": {
+    "selector-class-pattern": null,
+    "scss/dollar-variable-pattern": null,
+    "scss/percent-placeholder-pattern": null,
+    "no-descending-specificity": null,
+    "property-no-vendor-prefix": null,
+    "value-no-vendor-prefix": null,
+    "selector-no-vendor-prefix": null,
+    "max-nesting-depth": [4, {
+      "ignoreAtRules": ["media", "supports", "include"]
+    }],
+    "color-function-notation": "legacy",
+    "alpha-value-notation": "number",
+    "scss/no-global-function-names": null,
+    "scss/at-use-no-unnamespaced": null,
+    "import-notation": null,
+    "no-empty-source": null,
+    "declaration-block-no-redundant-longhand-properties": [true, {
+      "ignoreShorthands": ["grid-template"]
+    }]
+  }
+}

@@ -1,15 +1,10 @@
 @use 'utilities/variables' as *;
 @use 'utilities/mixins' as *;
-
 @use 'vendors/normalize';
-
-
 @use 'base/base';
 @use 'base/reset';
 @use 'base/typography';
-
 @use 'layout/container';
-
 @use 'components/button';
 @use 'components/header';
 @use 'components/hero-section';
@@ -25,8 +20,6 @@
 @use 'components/feedback-section';
 @use 'components/footer';
 @use 'components/accordion';
-
 @use 'pages/home';
-
 @use 'themes/theme';
 @use 'themes/dark';

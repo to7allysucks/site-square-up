@@ -28,7 +28,7 @@
     }
 
     &--wave-light {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../assets/images/banners/wave-light.svg);
+        background-image: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)), url("../../assets/images/banners/wave-light.svg");
 
         & p {
             width: 63%;
@@ -36,7 +36,7 @@
     }
 
     &--wave-textured {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../assets/images/banners/wave-textured.svg);
+        background-image: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)), url("../../assets/images/banners/wave-textured.svg");
 
         & p {
             width: 63%;
@@ -44,7 +44,7 @@
     }
 
     &--wave-dark-sharp {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../assets/images/banners/wave-dark-sharp.svg);
+        background-image: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)), url("../../assets/images/banners/wave-dark-sharp.svg");
 
         & p {
             width: 63%;
@@ -52,7 +52,7 @@
     }
 
     &--wave-smooth-green {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../assets/images/banners/wave-smooth-green.svg);
+        background-image: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)), url("../../assets/images/banners/wave-smooth-green.svg");
 
         & p {
             width: 57.7%;
@@ -61,7 +61,7 @@
 
     &--wave-big {
         gap: 5rem;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../assets/images/banners/wave-big.svg);
+        background-image: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)), url("../../assets/images/banners/wave-big.svg");
 
         & p {
             width: 57.7%;

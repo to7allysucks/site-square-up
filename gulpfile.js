@@ -14,6 +14,9 @@ import newer from "gulp-newer";
 import babel from 'gulp-babel';
 import terser from 'gulp-terser';
 
+import stylelint from 'stylelint';
+import htmlhint from 'gulp-htmlhint';
+
 const sass = gulpSass(dartSass);
 const bs = browserSync.create();
 
@@ -36,12 +39,15 @@ const paths = {
     src: 'src/assets/images/**/*',
     dest: 'dist/assets/images',
   },
-
   scripts: {
     src: 'src/assets/js/**/*.js',
     dest: 'dist/assets/js/',
     watch: 'src/assets/js/**/*.js',
-  }
+  },
+  lint: {
+    scss: 'src/scss/**/*.scss',
+    html: ['src/pages/**/*.html', 'src/components/**/*.html'],
+  },
 };
 
 export const html = () =>
@@ -90,6 +96,46 @@ export const assets = () =>
 
 export const clean = () => deleteAsync(['dist']);
 
+export const lintStyles = async () => {
+  const result = await stylelint.lint({
+    files: paths.lint.scss,
+    formatter: 'string',
+  });
+
+  if (result.output) {
+    console.log(result.output);
+  }
+
+  if (result.errored) {
+    throw new Error('Stylelint found errors');
+  }
+};
+
+export const lintHtml = () =>
+  gulp
+    .src(paths.lint.html)
+    .pipe(htmlhint('.htmlhintrc'))
+    .pipe(htmlhint.failAfterError());
+
+export const lintStylesDev = async () => {
+  const result = await stylelint.lint({
+    files: paths.lint.scss,
+    formatter: 'string',
+  });
+
+  if (result.output) {
+    console.log(result.output);
+  }
+};
+
+export const lintHtmlDev = () =>
+  gulp
+    .src(paths.lint.html)
+    .pipe(htmlhint('.htmlhintrc'))
+    .pipe(htmlhint.reporter());
+
+export const lint = gulp.parallel(lintStyles, lintHtml);
+
 export const serve = () => {
   bs.init({
     server: {
@@ -100,13 +146,13 @@ export const serve = () => {
     cors: true,
   });
 
-  gulp.watch(paths.styles.watch, styles);
-  gulp.watch(paths.html.watch, html);
+  gulp.watch(paths.styles.watch, gulp.series(lintStylesDev, styles));
+  gulp.watch(paths.html.watch, gulp.series(lintHtmlDev, html));
   gulp.watch(paths.assets.src, assets);
   gulp.watch(paths.images.src);
   gulp.watch(paths.scripts.watch, scripts);
 };
 
 
-export const build = gulp.series(clean, gulp.parallel(styles, html, assets, scripts));
+export const build = gulp.series(lint, clean, gulp.parallel(styles, html, assets, scripts));
 export default gulp.series(build, serve);
