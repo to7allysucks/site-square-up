@@ -84,20 +84,12 @@ export const scripts = () =>
     .pipe(gulp.dest(paths.scripts.dest))
     .pipe(bs.stream());
 
-const imagesToWebp = () =>
-  gulp.src(paths.images.src, { encoding: false })
-    .pipe(newer(paths.images.dest))
-    .pipe(webp({ quality: 80 }))
-    .pipe(gulp.dest(paths.images.dest));
 
-// Копирование ассетов
 export const assets = () =>
   gulp.src(paths.assets.src).pipe(gulp.dest(paths.assets.dest));
 
-// Очистка
 export const clean = () => deleteAsync(['dist']);
 
-// Сервер
 export const serve = () => {
   bs.init({
     server: {
@@ -111,10 +103,10 @@ export const serve = () => {
   gulp.watch(paths.styles.watch, styles);
   gulp.watch(paths.html.watch, html);
   gulp.watch(paths.assets.src, assets);
-  gulp.watch(paths.images.src, imagesToWebp);
+  gulp.watch(paths.images.src);
   gulp.watch(paths.scripts.watch, scripts);
 };
 
-// Сборка
-export const build = gulp.series(clean, gulp.parallel(styles, html, assets, imagesToWebp, scripts));
+
+export const build = gulp.series(clean, gulp.parallel(styles, html, assets, scripts));
 export default gulp.series(build, serve);
