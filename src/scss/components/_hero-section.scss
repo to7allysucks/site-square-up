@@ -1,3 +1,5 @@
+@use 'utilities' as *;
+
 .hero-section {
     background-image: url(../../assets/images/banners/hero-section-background.svg);
     background-size: cover;
@@ -9,8 +11,8 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border-left: var(--border-default);
-    border-right: var(--border-default);
+    border-left: $border-default;
+    border-right: $border-default;
 
     &__button {
         padding: 1.8rem 2.8rem;
@@ -18,7 +20,7 @@
     }
 
     &__promo {
-        border: 0.1rem solid var(--grey-15);
+        border: 0.1rem solid $color-grey-15;
         border-radius: 1.2rem;
         padding: 2.4rem 4rem;
         background: rgba(36, 36, 36, 0.2);
@@ -33,7 +35,7 @@
 
 .promo__text {
     display: flex;
-    color: var(--grey-60);
+    color: $color-grey-60;
     font-size: 2.2rem;
     font-weight: 400;
     gap: 0.6rem;
@@ -42,8 +44,8 @@
 
 .promo__card {
     font-size: 2.2rem;
-    background-color: var(--grey-15);
-    color: var(--light-color);
+    background-color: $color-grey-15;
+    color: $color-light;
     padding: 1.2rem 1.4rem;
     border: none;
     border-radius: 0.8rem;

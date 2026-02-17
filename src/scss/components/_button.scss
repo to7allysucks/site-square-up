@@ -1,3 +1,5 @@
+@use 'utilities' as *;
+
 .button {
     font-size: 1.8rem;
     font-weight: 500;
@@ -24,21 +26,21 @@
     }
 
     &--accent {
-        background-color: var(--accent-color);
-        color: var(--grey-15);
+        background-color: $color-accent;
+        color: $color-grey-15;
         border: 0.2rem solid transparent;
         transition: 0.3s;
 
         &:hover {
-            background-color: var(--green);
+            background-color: $color-green-80;
         }
     }
 
     &--blur {
-        color: var(--light-color);
+        color: $color-light;
         background-color: rgba(36, 36, 36, 0.2);
         backdrop-filter: blur(1.2rem);
-        border: 0.2rem solid var(--grey-20);
+        border: 0.2rem solid $color-grey-20;
         transition: 0.3s;
 
         &:hover {
@@ -48,12 +50,12 @@
     }
 
     &--grey {
-        background-color: var(--grey-15);
+        background-color: $color-grey-15;
         border: none;
         transition: 0.3s;
         
         &:hover {
-            background-color: var(--grey-20);
+            background-color: $color-grey-20;
         }
     }
 }

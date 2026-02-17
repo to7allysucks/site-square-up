@@ -1,7 +1,9 @@
+@use 'utilities' as *;
+
 .frame {
     display: flex;
     flex-direction: column;
-    border: var(--border-default);
+    border: $border-default;
     width: 100%;
 
     &__header {

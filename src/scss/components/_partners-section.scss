@@ -1,3 +1,5 @@
+@use 'utilities' as *;
+
 .partners-section {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -5,16 +7,16 @@
     justify-content: center;
     position: relative;
     padding: 4rem 0;
-    background-color: var(--grey-10);
-    border: var(--border-default);
+    background-color: $color-grey-10;
+    border: $border-default;
     gap: 2rem;
 
     &__count {
         text-align: center;
-        background-color: var(--background-color);
+        background-color: $color-background;
         padding: 2rem 3.4rem;
         max-width: 32rem;
-        border: var(--border-default);
+        border: $border-default;
         border-radius: 10rem;
         position: absolute;
         left: calc(50% - 14.3rem);

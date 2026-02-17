@@ -1,8 +1,10 @@
+@use 'utilities' as *;
+
 .testimonial-block {
     display: flex;
     flex-direction: column;
     padding: 10rem 8rem;
-    border: var(--border-default);
+    border: $border-default;
     max-width: 100%;
     justify-content: space-between;
     
@@ -23,25 +25,25 @@
     &__title {
         line-height: 1.5;
         max-width: 92%;
-        color: var(--green);
+        color: $color-green-80;
         margin-bottom: 2.4rem;
 
         &::selection {
-            background-color: var(--grey-12)
+            background-color: $color-grey-12;
         }
     }
 
     &__description {
         max-width: 100%;
         font-weight: 300;
-        color: var(--grey-90);
+        color: $color-grey-90;
         margin-bottom: 4rem;
     }
 
 
     &-extra {
         display: flex;
-        border: var(--border-default);
+        border: $border-default;
         border-radius: 0.8rem;
         padding: 2rem;
         background: rgba(36, 36, 36, 0.2);
@@ -60,7 +62,7 @@
 
         &__description {
             white-space: nowrap;
-            color: var(--grey-90);
+            color: $color-grey-90;
             font-weight: 300;
         }
     }

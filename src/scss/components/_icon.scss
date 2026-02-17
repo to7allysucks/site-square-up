@@ -1,7 +1,9 @@
+@use 'utilities' as *;
+
 .icon {
     display: flex;
     background: linear-gradient(#242424, transparent);
-    border: var(--border-default);
+    border: $border-default;
     border-radius: 1rem;
     width: 8.8rem;
     height: 8.8rem;

@@ -1,5 +1,7 @@
+@use 'utilities' as *;
+
 .card {
-    border: var(--border-default);
+    border: $border-default;
 
     &__content {
         width: 100%;

@@ -1,9 +1,11 @@
+@use 'utilities' as *;
+
 .feedback-section {
     display: flex;
     width: 100%;
-    border-top: var(--border-default);
-    border-left: var(--border-default);
-    border-right: var(--border-default);
+    border-top: $border-default;
+    border-left: $border-default;
+    border-right: $border-default;
     padding-inline: 26.8rem;
     
     &__button {
@@ -25,8 +27,8 @@
     column-gap: 4rem;
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
-    border-left: var(--border-default);
-    border-right: var(--border-default);
+    border-left: $border-default;
+    border-right: $border-default;
     padding: 8rem;
 
     & input {
@@ -53,11 +55,11 @@
         
         & input {
             padding: 0.6rem 0;
-            border-bottom: 0.1rem solid var(--grey-20);
+            border-bottom: 0.1rem solid $color-grey-20;
 
             &:focus {
                 padding: 0.6rem 0.6rem;
-                border-bottom: 0.1rem solid var(--grey-20);
+                border-bottom: 0.1rem solid $color-grey-20;
                 border-radius: 1rem;
                 outline: none;
             }
@@ -74,11 +76,11 @@
 
         & input {
             padding: 0.6rem 0;
-            border-bottom: 0.1rem solid var(--grey-20);
+            border-bottom: 0.1rem solid $color-grey-20;
 
             &:focus {
                 padding: 0.6rem 0.6rem;
-                border-bottom: 0.1rem solid var(--grey-20);
+                border-bottom: 0.1rem solid $color-grey-20;
                 border-radius: 1rem;
                 outline: none;
             }
@@ -110,9 +112,9 @@
             position: relative;
             height: 2.8rem;
             width: 2.8rem;
-            border: 0.1rem solid var(--grey-20);
+            border: 0.1rem solid $color-grey-20;
             border-radius: 0.4rem;
-            background-color: var(--grey-15);
+            background-color: $color-grey-15;
             cursor: pointer;
             padding: 0.4rem;
             outline: none;
@@ -125,7 +127,7 @@
                 left: 1rem;
                 width: 0.5rem;
                 height: 1rem;
-                border: solid var(--accent-color);
+                border: solid $color-accent;
                 border-width: 0 0.1rem 0.1rem 0;
                 transform: rotate(45deg);
             }
@@ -161,7 +163,7 @@
 
         & input {
             cursor: grabbing;
-            accent-color: var(--accent-color);
+            accent-color: $color-accent;
             border: none;
 
             &:focus {
@@ -181,12 +183,12 @@
 
         & input {
             padding: 0.6rem 0;
-            border-bottom: 0.1rem solid var(--grey-20);
+            border-bottom: 0.1rem solid $color-grey-20;
             margin-bottom: 4rem;
 
             &:focus {
                 padding: 0.6rem 0.6rem;
-                border-bottom: 0.1rem solid var(--grey-20);
+                border-bottom: 0.1rem solid $color-grey-20;
                 border-radius: 1rem;
                 outline: none;
             }
@@ -196,8 +198,8 @@
     &__slab {
         display: flex;
         flex-direction: column;
-        background-color: var(--grey-11);
-        border: var(--border-default);
+        background-color: $color-grey-11;
+        border: $border-default;
         width: 100%;
     }
 }
@@ -205,5 +207,5 @@
 .input-message__line {
     display: flex;
     width: 100%;
-    border-bottom: 0.1rem solid var(--grey-20);
+    border-bottom: 0.1rem solid $color-grey-20;
 }

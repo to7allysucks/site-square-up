@@ -1,8 +1,10 @@
+@use 'utilities' as *;
+
 .header {
     display: flex;
     padding: 2rem 16.2rem;
-    border-bottom: var(--border-default);
-    background-color: var(--background-color);
+    border-bottom: $border-default;
+    background-color: $color-background;
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
@@ -26,19 +28,18 @@
 }
 
 .menu-list__link {
-    color: var(--light-color);
+    color: $color-light;
     font-weight: 500;
     border-radius: 0.8rem;
     transition: 0.33s;
 
     &:hover {
-        color: var(--accent-color);
+        color: $color-accent;
     }
 }
 
 .is-active {
     font-weight: 600;
-    background-color: var(--grey-15);
+    background-color: $color-grey-15;
     padding: 1.4rem 2.8rem;
-    
 }

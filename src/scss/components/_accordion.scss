@@ -1,8 +1,10 @@
+@use 'utilities' as *;
+
 .accordion {
     display: flex;
     width: 100%;
     flex-direction: column;
-    border: var(--border-default);
+    border: $border-default;
     position: relative;
 
     &-plus {
@@ -50,15 +52,15 @@
     &-section {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        border: var(--border-default);
+        border: $border-default;
     }
     
     &__details[open] &__title  {
-        color: var(--green-70);
+        color: $color-green-70;
     }
 
     &__details[open] .icon__title, svg path {
-        color: var(--accent-color);
+        color: $color-accent;
     }
 
     &__details[open] &-plus {
@@ -66,12 +68,12 @@
     }
 
     &__details[open] svg path{
-        fill: var(--accent-color)
+        fill: $color-accent;
     }
 }
 
 .empty-cell {
     min-height: 8rem;
-    border-left: var(--border-default);
-    border-right: var(--border-default);
+    border-left: $border-default;
+    border-right: $border-default;
 }
