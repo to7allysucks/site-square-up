@@ -16,3 +16,9 @@ $color-green-80: #D8FF99;
 $color-green-70: #C5FF66;
 $color-light: #fff;
 $color-dark: #000;
+$breakpoints: (
+    "mobile": 390px,
+    "tablet": 768px,
+    "laptop-sm": 1024px,
+    "laptop": 1440px
+)
