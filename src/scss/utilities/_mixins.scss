@@ -1,4 +1,5 @@
-@use 'utilities' as *;
+@use 'variables' as *;
+@use 'functions' as *;
 
 @mixin respond-to($device, $size: null) {
     @if map-has-key($breakpoints, $device) {

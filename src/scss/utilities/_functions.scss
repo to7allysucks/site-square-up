@@ -1,4 +1,4 @@
-@use 'utilities' as *;
+@use 'variables' as *;
 
 @function rem($px) {
     @return ($px / 16) * 1 rem;
