@@ -58,7 +58,11 @@
 
     &__details[open] + &__content {
         grid-template-rows: 1fr;
-        padding: 0 rem(50) rem(34) rem(160);
+        padding: 0 rem(50) rem(34) rem(150);
+
+        @include respond-to(laptop) {
+            padding: 0 rem(40) rem(30) rem(150);
+        }
     }
 
     &-section {
