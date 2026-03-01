@@ -1,4 +1,4 @@
-@use 'utilities' as *;
+@use '../utilities' as *;
 
 .services-section {
     display: flex;
@@ -11,13 +11,13 @@
         justify-content: space-between;
         width: 100%;
         height: auto;
-        padding: 5rem;
-        gap: 8rem;
+        padding: rem(50);
+        gap: rem(80);
     }
 
     &__button {
-        border-radius: 0.8rem; 
-        padding: 1.8rem 1.6rem;
+        border-radius: rem(8);
+        padding: rem(18) rem(16);
         width: 100%;
     }
 }

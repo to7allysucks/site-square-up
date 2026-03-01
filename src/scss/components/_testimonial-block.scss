@@ -1,9 +1,9 @@
-@use 'utilities' as *;
+@use '../utilities' as *;
 
 .testimonial-block {
     display: flex;
     flex-direction: column;
-    padding: 10rem 8rem;
+    padding: rem(100) rem(80);
     border: $border-default;
     max-width: 100%;
     justify-content: space-between;
@@ -12,21 +12,21 @@
         display: flex;
         white-space: nowrap;
         align-self: end;
-        padding: 1.8rem 2rem;
-        border-radius: 0.8rem;
+        padding: rem(18) rem(20);
+        border-radius: rem(8);
         width: 100%;    
     }
 
     & img {
-        border-radius: 0.8rem;
-        margin-right: 1.8rem;
+        border-radius: rem(8);
+        margin-right: rem(18);
     }
 
     &__title {
         line-height: 1.5;
         max-width: 92%;
         color: $color-green-80;
-        margin-bottom: 2.4rem;
+        margin-bottom: rem(24);
 
         &::selection {
             background-color: $color-grey-12;
@@ -37,15 +37,15 @@
         max-width: 100%;
         font-weight: 300;
         color: $color-grey-90;
-        margin-bottom: 4rem;
+        margin-bottom: rem(40);
     }
 
 
     &-extra {
         display: flex;
         border: $border-default;
-        border-radius: 0.8rem;
-        padding: 2rem;
+        border-radius: rem(8);
+        padding: rem(20);
         background: rgb(36, 36, 36, 0.2);
         justify-content: space-between;
         
@@ -57,7 +57,7 @@
 
         &__text {
             max-width: 100%;
-            gap: 0.2rem
+            gap: rem(2)
         }
 
         &__description {

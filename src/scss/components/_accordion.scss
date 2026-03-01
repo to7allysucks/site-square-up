@@ -1,4 +1,4 @@
-@use 'utilities' as *;
+@use '../utilities' as *;
 
 .accordion {
     display: flex;
@@ -9,22 +9,22 @@
 
     &-plus {
         position: absolute;
-        top: 5.3rem;
-        right: 3rem;
+        top: rem(53);
+        right: rem(30);
         transition: .2s;
     }
 
     &__summary {
         display: flex;
         flex-direction: row;
-        padding: 3rem 5rem;
+        padding: rem(30) rem(50);
         cursor: pointer;
     }
 
     &__title {
         display: flex;
         flex-direction: row;
-        gap: 3rem;
+        gap: rem(30);
         align-items: center;
         font-weight: 500;
         max-width: 75%;
@@ -47,7 +47,7 @@
 
     &__details[open] + &__content {
         grid-template-rows: 1fr;
-        padding: 0 5rem 3.4rem 16rem;
+        padding: 0 rem(50) rem(34) rem(160);
     }
 
     &-section {
@@ -74,7 +74,7 @@
 }
 
 .empty-cell {
-    min-height: 8rem;
+    min-height: rem(80);
     border-left: $border-default;
     border-right: $border-default;
 }

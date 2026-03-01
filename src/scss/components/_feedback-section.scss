@@ -1,4 +1,4 @@
-@use 'utilities' as *;
+@use '../utilities' as *;
 
 .feedback-section {
     display: flex;
@@ -6,12 +6,12 @@
     border-top: $border-default;
     border-left: $border-default;
     border-right: $border-default;
-    padding-inline: 26.8rem;
+    padding-inline: rem(268);
     
     &__button {
         justify-self: center;
-        padding: 1.8rem 4.4rem;
-        border-radius: 0.8rem;
+        padding: rem(18) rem(44);
+        border-radius: rem(8);
 
         &-form {
             grid-column: span 2;
@@ -23,12 +23,12 @@
 
 .feedback-wrapper {
     display: grid;
-    gap: 4rem;
+    gap: rem(40);
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
     border-left: $border-default;
     border-right: $border-default;
-    padding: 8rem;
+    padding: rem(80);
 
     & input {
         background-color: transparent;
@@ -45,42 +45,42 @@
     }
 
     &__input-name {
-        padding: 2.4rem 4rem;
-        border-radius: 0.8rem;
+        padding: rem(24) rem(40);
+        border-radius: rem(8);
 
         & .feedback-wrapper__title {
-            margin-bottom: 2rem;
+            margin-bottom: rem(20);
         }
         
         & input {
-            padding: 0.6rem 0;
-            border-bottom: 0.1rem solid $color-grey-20;
+            padding: rem(6) 0;
+            border-bottom: rem(1) solid $color-grey-20;
 
             &:focus {
-                padding: 0.6rem;
-                border-bottom: 0.1rem solid $color-grey-20;
-                border-radius: 1rem;
+                padding: rem(6);
+                border-bottom: rem(1) solid $color-grey-20;
+                border-radius: rem(10);
                 outline: none;
             }
         }
     }
     
     &__input-email {
-        padding: 2.4rem 4rem;
-        border-radius: 0.8rem;
+        padding: rem(24) rem(40);
+        border-radius: rem(8);
 
         & .feedback-wrapper__title {
-            margin-bottom: 2rem;
+            margin-bottom: rem(20);
         }
 
         & input {
-            padding: 0.6rem 0;
-            border-bottom: 0.1rem solid $color-grey-20;
+            padding: rem(6) 0;
+            border-bottom: rem(1) solid $color-grey-20;
 
             &:focus {
-                padding: 0.6rem;
-                border-bottom: 0.1rem solid $color-grey-20;
-                border-radius: 1rem;
+                padding: rem(6);
+                border-bottom: rem(1) solid $color-grey-20;
+                border-radius: rem(10);
                 outline: none;
             }
         }
@@ -90,43 +90,43 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 100%;
-        gap: 2.4rem 2rem;
+        gap: rem(24) rem(20);
     }
 
     &__input-check {
         display: grid;
         grid-column: span 2;
-        padding: 4rem;
-        border-radius: 1.2rem;
+        padding: rem(40);
+        border-radius: rem(12);
         background-color: transparent;
 
         & .feedback-wrapper__title {
-            margin-bottom: 4rem;
+            margin-bottom: rem(40);
         }
 
         & input {
             appearance: none;
             -webkit-appearance: none;
             position: relative;
-            height: 2.8rem;
-            width: 2.8rem;
-            border: 0.1rem solid $color-grey-20;
-            border-radius: 0.4rem;
+            height: rem(28);
+            width: rem(28);
+            border: rem(1) solid $color-grey-20;
+            border-radius: rem(4);
             background-color: $color-grey-15;
             cursor: pointer;
-            padding: 0.4rem;
+            padding: rem(4);
             outline: none;
             transition: all 0.2s ease;
 
             &:checked::after {
                 content: '';
                 position: absolute;
-                top: 0.65rem;
-                left: 1.04rem;
-                width: 0.5rem;
-                height: 1rem;
+                top: rem(6.5);
+                left: rem(10.4);
+                width: rem(5);
+                height: rem(10);
                 border: solid $color-accent;
-                border-width: 0 0.1rem 0.1rem 0;
+                border-width: 0 rem(1) rem(1) 0;
                 transform: rotate(45deg);
             }
         }
@@ -135,11 +135,11 @@
             display: flex;
             align-items: center;
             cursor: pointer;
-            gap: 1rem;
+            gap: rem(10);
         }
 
         & .label-content {
-            font-size: 1.8rem;
+            font-size: rem(18);
             font-weight: 300;
 
         }
@@ -148,15 +148,15 @@
     &__input-range {
         display: flex;
         grid-column: span 2;
-        padding: 4rem;
-        border-radius: 1.2rem;
+        padding: rem(40);
+        border-radius: rem(12);
 
         & .feedback-wrapper__title {
-            margin-bottom: 1.4rem;
+            margin-bottom: rem(14);
         }
 
         & .feedback-wrapper__description {
-            margin-bottom: 4rem;
+            margin-bottom: rem(40);
         }
 
         & input {
@@ -171,23 +171,23 @@
     }
 
     &__input-message {
-        padding: 2.4rem 4rem;
-        border-radius: 0.8rem;
+        padding: rem(24) rem(40);
+        border-radius: rem(8);
         grid-column: span 2;
 
         & .feedback-wrapper__title {
-            margin-bottom: 2rem;
+            margin-bottom: rem(20);
         }
 
         & input {
-            padding: 0.6rem 0;
+            padding: rem(6) 0;
             border-bottom: 0.1rem solid $color-grey-20;
-            margin-bottom: 4rem;
+            margin-bottom: rem(40);
 
             &:focus {
-                padding: 0.6rem;
-                border-bottom: 0.1rem solid $color-grey-20;
-                border-radius: 1rem;
+                padding: rem(6);
+                border-bottom: rem(1) solid $color-grey-20;
+                border-radius: rem(10);
                 outline: none;
             }
         }
@@ -205,5 +205,5 @@
 .input-message__line {
     display: flex;
     width: 100%;
-    border-bottom: 0.1rem solid $color-grey-20;
+    border-bottom: rem(1) solid $color-grey-20;
 }

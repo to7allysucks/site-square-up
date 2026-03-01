@@ -1,11 +1,7 @@
-@use 'utilities' as *;
-
-html {
-  font-size: 62.5%;
-}
+@use '../utilities' as *;
 
 * {
-  font-size: 1.8rem;
+  font-size: rem(18);
   font-family: Barlow, sans-serif;
   font-weight: 400;
   color: $color-light;
@@ -19,7 +15,7 @@ html {
 
 html.is-animating .transition-fade {
   opacity: 0;
-  transform: translateY(2rem);
+  transform: translateY(rem(20));
 }
 
 p::selection {
@@ -39,7 +35,7 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding-inline: 16.2rem;
+  padding-inline: rem(162);
 }
 
 h1, h2, h3,
@@ -48,8 +44,8 @@ h1, h2, h3,
 }
 
 h1, .h1 {
-  font-size: 6.8rem;
-  margin-bottom: 4rem;
+  font-size: rem(68);
+  margin-bottom: rem(40);
 
   &::selection {
     color: $color-accent;
@@ -62,8 +58,8 @@ h1, .h1 {
 }
 
 .h2, h2 {
-  font-size: 4.8rem;
-  margin-bottom: 1rem;
+  font-size: rem(48);
+  margin-bottom: rem(10);
 
   &::selection {
     color: $color-accent;
@@ -75,7 +71,7 @@ h1, .h1 {
 }
 
 .h3, h3 {
-  font-size: 3rem;
+  font-size: rem(30);
 
   &::selection {
     color: $color-accent;
@@ -87,7 +83,7 @@ h1, .h1 {
 }
 
 .h4, h4 {
-  font-size: 2.6rem;
+  font-size: rem(26);
 
   &::selection {
     color: $color-accent;
@@ -99,7 +95,7 @@ h1, .h1 {
 }
 
 .h5, h5 {
-  font-size: 2.8rem;
+  font-size: rem(28);
 
   &::selection {
     color: $color-accent;
@@ -111,7 +107,7 @@ h1, .h1 {
 }
 
 .h6, h6 {
-  font-size: 2.2rem;
+  font-size: rem(22);
 
   &::selection {
     color: $color-accent;

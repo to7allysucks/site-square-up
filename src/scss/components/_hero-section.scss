@@ -1,4 +1,4 @@
-@use 'utilities' as *;
+@use '../utilities' as *;
 
 .hero-section {
     background-image: url("../../assets/images/banners/hero-section-background.svg");
@@ -6,7 +6,7 @@
 	background-position: center;
 	background-repeat: no-repeat;
     width: 100%;
-    padding-top: 11.2rem;
+    padding-top: rem(112);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,38 +15,38 @@
     border-right: $border-default;
 
     &__button {
-        padding: 1.8rem 2.8rem;
-        border-radius: 1rem;
+        padding: rem(18) rem(28);
+        border-radius: rem(10);
     }
 
     &__promo {
-        border: 0.1rem solid $color-grey-15;
-        border-radius: 1.2rem;
-        padding: 2.4rem 4rem;
+        border: rem(1) solid $color-grey-15;
+        border-radius: rem(12);
+        padding: rem(24) rem(40);
         background: rgb(36, 36, 36, 0.2);
-        backdrop-filter: blur(1.2rem);
+        backdrop-filter: blur(rem(12));
         text-align: center;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-bottom: 5rem;
+        margin-bottom: rem(50);
     }
 }
 
 .promo__text {
     display: flex;
     color: $color-grey-60;
-    font-size: 2.2rem;
+    font-size: rem(22);
     font-weight: 400;
-    gap: 0.6rem;
+    gap: rem(6);
     align-items: center;
 }
 
 .promo__card {
-    font-size: 2.2rem;
+    font-size: rem(22);
     background-color: $color-grey-15;
     color: $color-light;
-    padding: 1.2rem 1.4rem;
+    padding: rem(12) rem(14);
     border: none;
-    border-radius: 0.8rem;
+    border-radius: rem(8);
 }

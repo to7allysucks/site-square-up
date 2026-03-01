@@ -1,4 +1,4 @@
-@use 'utilities' as *;
+@use '../utilities' as *;
 
 .frame {
     display: flex;
@@ -8,11 +8,11 @@
 
     &__header {
         display: flex;
-        gap: 2rem;
+        gap: rem(20);
         align-items: center;
     }
 
     &__description {
-        font-size: 2rem;
+        font-size: rem(20);
     }
 }

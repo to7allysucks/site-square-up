@@ -1,4 +1,4 @@
-@use 'utilities' as *;
+@use '../utilities' as *;
 
 .review-section {
     display: grid;
@@ -6,11 +6,11 @@
     max-width: 100%;
 
     &__frame {
-        padding: 8rem;
+        padding: rem(80);
     }
 
     &__description {
-        margin-top: 4rem;
+        margin-top: rem(40);
         font-weight: 300;
     }
 }
