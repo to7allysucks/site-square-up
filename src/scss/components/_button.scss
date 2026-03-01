@@ -1,7 +1,7 @@
-@use 'utilities' as *;
+@use '../utilities' as *;
 
 .button {
-    font-size: 1.8rem;
+    font-size: rem(18);
     font-weight: 500;
     font-family: Barlow, sans-serif;
     text-align: center;
@@ -21,14 +21,14 @@
     &s__wrapper {
         display: flex;
         flex-direction: row;
-        gap: 1.3rem;
-        margin-bottom: 27.5rem;
+        gap: rem(13);
+        margin-bottom: rem(275);
     }
 
     &--accent {
         background-color: $color-accent;
         color: $color-grey-15;
-        border: 0.2rem solid transparent;
+        border: rem(2) solid transparent;
         transition: 0.3s;
 
         &:hover {
@@ -39,13 +39,13 @@
     &--blur {
         color: $color-light;
         background-color: rgb(36, 36, 36, 0.2);
-        backdrop-filter: blur(1.2rem);
-        border: 0.2rem solid $color-grey-20;
+        backdrop-filter: blur(rem(12));
+        border: rem(2) solid $color-grey-20;
         transition: 0.3s;
 
         &:hover {
             background-color: rgb(36, 36, 36, 0.05);
-            backdrop-filter: blur(0.2rem);
+            backdrop-filter: blur(rem(2));
         }
     }
 

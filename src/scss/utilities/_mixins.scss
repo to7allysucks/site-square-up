@@ -4,7 +4,9 @@
 @mixin respond-to($device, $size: null) {
     @if map-has-key($breakpoints, $device) {
         @media (max-width: map-get($breakpoints, $device)) {
-            @if $size { font-size: rem($size); }
+            @if $size {
+                font-size: rem($size);
+            }
             @content;
         }
     }

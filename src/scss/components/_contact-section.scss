@@ -1,4 +1,4 @@
-@use 'utilities' as *;
+@use '../utilities' as *;
 
 .contact-section {
     display: flex;
@@ -6,9 +6,9 @@
     justify-content: center;
     align-items: center;
     border: $border-default;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    gap: 2rem;
+    padding-top: rem(40);
+    padding-bottom: rem(40);
+    gap: rem(20);
 }
 
 .contact-wrapper {
@@ -16,8 +16,8 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 1.8rem 2rem;
+  padding: rem(18) rem(20);
   background-color: $color-grey-15;
-  border-radius: 0.6rem;
-  gap: 1.4rem;
+  border-radius: rem(6);
+  gap: rem(14);
 }

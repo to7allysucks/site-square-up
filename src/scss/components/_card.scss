@@ -1,4 +1,4 @@
-@use 'utilities' as *;
+@use '../utilities' as *;
 
 .card {
     border: $border-default;
@@ -6,15 +6,15 @@
     &__content {
         width: 100%;
         display: flex;
-        gap: 4rem;
+        gap: rem(40);
         flex-direction: column;
     }
 
     &__text {
         display: flex;
         flex-direction: column;
-        gap: 2rem;
-        max-width: 43.2rem;
+        gap: rem(20);
+        max-width: rem(432);
     }
 
     &__description {

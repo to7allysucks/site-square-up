@@ -1,8 +1,8 @@
-@use 'utilities' as *;
+@use '../utilities' as *;
 
 .header {
     display: flex;
-    padding: 2rem 16.2rem;
+    padding: rem(20) rem(162);
     border-bottom: $border-default;
     background-color: $color-background;
     justify-content: space-between;
@@ -18,19 +18,19 @@
 
     &__menu-list {
         display: flex;
-        gap: 3rem;
+        gap: rem(30);
     }
 
     &__button {
-        padding: 1.6rem 2.4rem;
-        border-radius: 0.8rem;
+        padding: rem(16) rem(24);
+        border-radius: rem(8);
     }
 }
 
 .menu-list__link {
     color: $color-light;
     font-weight: 500;
-    border-radius: 0.8rem;
+    border-radius: rem(8);
     transition: 0.33s;
 
     &:hover {
@@ -41,5 +41,5 @@
 .is-active {
     font-weight: 600;
     background-color: $color-grey-15;
-    padding: 1.4rem 2.8rem;
+    padding: rem(14) rem(28);
 }
