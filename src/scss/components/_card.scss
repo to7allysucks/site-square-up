@@ -8,6 +8,10 @@
         display: flex;
         gap: rem(40);
         flex-direction: column;
+
+        @include respond-to(laptop) {
+            gap: rem(30);
+        }
     }
 
     &__text {
@@ -15,6 +19,11 @@
         flex-direction: column;
         gap: rem(20);
         max-width: rem(432);
+
+        @include respond-to(laptop) {
+            gap: rem(14);
+            max-width: rem(346);
+        }
     }
 
     &__description {
@@ -23,6 +32,5 @@
         line-height: 133%;
         letter-spacing: -0.01em; 
         font-weight: 300;
-
     }
 }

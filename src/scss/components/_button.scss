@@ -9,6 +9,10 @@
     cursor: pointer;
     transition: transform 0.4s;
 
+    @include respond-to(laptop) {
+        font-size: rem(14);
+    }
+
     &-form {
         grid-column: span 2;
 

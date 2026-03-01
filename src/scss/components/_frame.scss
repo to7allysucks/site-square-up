@@ -10,9 +10,17 @@
         display: flex;
         gap: rem(20);
         align-items: center;
+
+        @include respond-to(laptop) {
+            gap: rem(14);
+        }
     }
 
     &__description {
         font-size: rem(20);
+
+        @include respond-to(laptop) {
+            margin-top: rem(16);
+        }
     }
 }

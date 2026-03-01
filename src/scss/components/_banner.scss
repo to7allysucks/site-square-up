@@ -13,6 +13,10 @@
     background-position: center;
     background-repeat: no-repeat;
 
+    @include respond-to(laptop) {
+        padding: rem(100) 0;
+    }
+
     &__text {
         color: $color-grey-90;
         letter-spacing: -0.6%;
@@ -60,8 +64,28 @@
     }
 
     &--wave-big {
-        gap: 5rem;
+        gap: rem(50);
         background-image: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)), url("../../assets/images/banners/wave-big.svg");
+
+        @include respond-to(laptop) {
+            gap: rem(40);
+        }
+
+        & img {
+            @include respond-to(laptop) {
+                max-width: rem(60);
+            }
+        }
+
+        &__button {
+            padding: rem(18) rem(34);
+            border-radius: rem(8);
+
+            @include respond-to(laptop) {
+                padding: rem(14) rem(24);
+                border-radius: rem(6);
+            }
+        }
 
         & p {
             width: 57.7%;

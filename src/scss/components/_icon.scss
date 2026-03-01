@@ -12,12 +12,31 @@
     justify-content: center;
     align-items: center;
 
+    @include respond-to(laptop) {
+        width: rem(70);
+        height: rem(70);
+        padding: rem(20);
+        border-radius: rem(8);
+    }
+
     &--small {
-        width: rem(64);
+        max-width: rem(64);
         height: rem(64);
         padding: rem(20);
         justify-content: center;
         align-items: center;
+
+        @include respond-to(laptop) {
+            width: rem(52);
+            height: rem(52);
+            padding: rem(16);
+        }
+
+        & img {
+            @include respond-to(laptop) {
+                max-width: rem(20);
+            }
+        }
     }
 
     &--medium {
@@ -25,12 +44,22 @@
         height: rem(80);
         padding: rem(20);
         width: 100%;
+
+        @include respond-to(laptop) {
+            max-width: rem(62);
+            height: rem(62);
+            padding: rem(16);
+        }
     }
 
     &__title {
         font-size: rem(28);
         font-weight: 600;
         user-select: none;
+
+        @include respond-to(laptop) {
+            font-size: rem(24);
+        }
     }
         
     &--green {

@@ -11,6 +11,10 @@
     border: $border-default;
     gap: rem(20);
 
+    @include respond-to(laptop) {
+        padding: rem(30) 0;
+    }
+
     &__count {
         text-align: center;
         background-color: $color-background;
@@ -21,6 +25,10 @@
         position: absolute;
         left: calc(50% - 8.9375rem);
         top: calc(-2.0625rem);
+
+        @include respond-to(laptop) {
+            padding: rem(14) rem(24);
+        }
     }
 }
 

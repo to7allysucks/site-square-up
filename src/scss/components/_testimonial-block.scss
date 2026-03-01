@@ -7,19 +7,34 @@
     border: $border-default;
     max-width: 100%;
     justify-content: space-between;
-    
+
+    @include respond-to(laptop) {
+        padding: rem(80) rem(60);
+    }
+
     &__button {
         display: flex;
         white-space: nowrap;
         align-self: end;
         padding: rem(18) rem(20);
         border-radius: rem(8);
-        width: 100%;    
+        width: 100%;
+
+        @include respond-to(laptop) {
+            padding: rem(16) rem(14);
+            border-radius: rem(6);
+        }
+
     }
 
     & img {
         border-radius: rem(8);
         margin-right: rem(18);
+
+        @include respond-to(laptop) {
+            border-radius: rem(6);
+            margin-right: rem(12);
+        }
     }
 
     &__title {
@@ -27,6 +42,10 @@
         max-width: 92%;
         color: $color-green-80;
         margin-bottom: rem(24);
+
+        @include respond-to(laptop) {
+            margin-bottom: rem(20);
+        }
 
         &::selection {
             background-color: $color-grey-12;
@@ -38,6 +57,10 @@
         font-weight: 300;
         color: $color-grey-90;
         margin-bottom: rem(40);
+
+        @include respond-to(laptop) {
+            margin-bottom: rem(30);
+        }
     }
 
 
@@ -48,10 +71,16 @@
         padding: rem(20);
         background: rgb(36, 36, 36, 0.2);
         justify-content: space-between;
-        
+
+        @include respond-to(laptop) {
+            border-radius: rem(6);
+            padding: rem(14);
+        }
+
         &__content {
             display: flex;
             flex-direction: row;
+            align-items: center;
             max-width: 100%;
         }
 

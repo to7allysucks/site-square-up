@@ -12,13 +12,24 @@
         top: rem(53);
         right: rem(30);
         transition: .2s;
+
+        @include respond-to(laptop) {
+            top: rem(53);
+            right: rem(30);
+        }
     }
 
     &__summary {
         display: flex;
         flex-direction: row;
-        padding: rem(30) rem(50);
+        padding: rem(24) rem(40);
         cursor: pointer;
+        font-size: rem(22);
+
+        @include respond-to(laptop) {
+            padding: rem(30) rem(40);
+            font-size: rem(18);
+        }
     }
 
     &__title {

@@ -7,10 +7,18 @@
 
     &__frame {
         padding: rem(80);
+
+        @include respond-to(laptop) {
+            padding: rem(60);
+        }
     }
 
     &__description {
         margin-top: rem(40);
         font-weight: 300;
+
+        @include respond-to(laptop) {
+            margin-top: rem(30);
+        }
     }
 }

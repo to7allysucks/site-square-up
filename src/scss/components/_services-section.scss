@@ -13,11 +13,21 @@
         height: auto;
         padding: rem(50);
         gap: rem(80);
+
+        @include respond-to(laptop) {
+            padding: rem(40);
+            gap: rem(60);
+        }
     }
 
     &__button {
         border-radius: rem(8);
         padding: rem(18) rem(16);
         width: 100%;
+
+        @include respond-to(laptop) {
+            border-radius: rem(6);
+            padding: rem(14) rem(16);
+        }
     }
 }

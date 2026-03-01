@@ -1,140 +1,173 @@
 @use '../utilities' as *;
 
 * {
-  font-size: rem(18);
-  font-family: Barlow, sans-serif;
-  font-weight: 400;
-  color: $color-light;
-  box-sizing: border-box;
+    font-size: rem(18);
+    font-family: Barlow, sans-serif;
+    font-weight: 400;
+    color: $color-light;
+    box-sizing: border-box;
+
+    @include respond-to(laptop) {
+        font-size: rem(16);
+    }
 }
 
 .transition-fade {
-  transition: 0.4s;
-  opacity: 1;
+    transition: 0.4s;
+    opacity: 1;
 }
 
 html.is-animating .transition-fade {
-  opacity: 0;
-  transform: translateY(rem(20));
+    opacity: 0;
+    transform: translateY(rem(20));
 }
 
 p::selection {
-  color: $color-accent;
+    color: $color-accent;
 }
 
 p::-moz-selection {
     color: $color-accent;
-  }
+}
 
 body {
-  background-color: $color-background;
+    background-color: $color-background;
 }
 
 
 main {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding-inline: rem(162);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-inline: rem(162);
+
+    @include respond-to(laptop) {
+        padding-inline: rem(80);
+    }
 }
 
 h1, h2, h3,
 .h1, .h2, .h3 {
-  font-weight: 600;
+    font-weight: 600;
 }
 
 h1, .h1 {
-  font-size: rem(68);
-  margin-bottom: rem(40);
+    font-size: rem(68);
+    margin-bottom: rem(40);
 
-  &::selection {
-    color: $color-accent;
-  }
+    @include respond-to(laptop) {
+        font-size: rem(48);
+        margin-bottom: rem(30);
+    }
 
-  &::-moz-selection {
-    color: $color-accent;
-  }
+    &::selection {
+        color: $color-accent;
+    }
+
+    &::-moz-selection {
+        color: $color-accent;
+    }
 
 }
 
 .h2, h2 {
-  font-size: rem(48);
-  margin-bottom: rem(10);
+    font-size: rem(48);
+    margin-bottom: rem(10);
 
-  &::selection {
-    color: $color-accent;
-  }
+    @include respond-to(laptop) {
+        font-size: rem(38);
+    }
 
-  &::-moz-selection {
-    color: $color-accent;
-  }
+    &::selection {
+        color: $color-accent;
+    }
+
+    &::-moz-selection {
+        color: $color-accent;
+    }
 }
 
 .h3, h3 {
-  font-size: rem(30);
+    font-size: rem(30);
 
-  &::selection {
-    color: $color-accent;
-  }
+    @include respond-to(laptop) {
+        font-size: rem(24);
+    }
+
+    &::selection {
+        color: $color-accent;
+    }
   
-  &::-moz-selection {
-    color: $color-accent;
-  }
+    &::-moz-selection {
+        color: $color-accent;
+    }
 }
 
 .h4, h4 {
-  font-size: rem(26);
+    font-size: rem(26);
 
-  &::selection {
-    color: $color-accent;
-  }
+    @include respond-to(laptop) {
+        font-size: rem(20);
+    }
 
-  &::-moz-selection {
-    color: $color-accent;
-  }
+    &::selection {
+        color: $color-accent;
+    }
+
+    &::-moz-selection {
+        color: $color-accent;
+    }
 }
 
 .h5, h5 {
-  font-size: rem(28);
+    font-size: rem(28);
 
-  &::selection {
-    color: $color-accent;
-  }
+    @include respond-to(laptop) {
+        font-size: rem(20);
+    }
 
-  &::-moz-selection {
-    color: $color-accent;
-  }
+    &::selection {
+        color: $color-accent;
+    }
+
+    &::-moz-selection {
+        color: $color-accent;
+    }
 }
 
 .h6, h6 {
-  font-size: rem(22);
+    font-size: rem(22);
 
-  &::selection {
-    color: $color-accent;
-  }
+    @include respond-to(laptop) {
+        font-size: rem(18);
+    }
 
-  &::-moz-selection {
-    color: $color-accent;
-  }
+    &::selection {
+        color: $color-accent;
+    }
+
+    &::-moz-selection {
+        color: $color-accent;
+    }
 }
 
 input {
-  background-color: $color-background;
-  border: none;
+    background-color: $color-background;
+    border: none;
 
-  &::placeholder {
-    color: $color-grey-40;
-  }
+    &::placeholder {
+        color: $color-grey-40;
+    }
 
 }
 
 img {
-  object-fit: cover;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-user-drag: none;
-  outline: none;
-  -webkit-tap-highlight-color: rgb(0,0,0,0);
+    object-fit: cover;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    outline: none;
+    -webkit-tap-highlight-color: rgb(0,0,0,0);
 }

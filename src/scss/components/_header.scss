@@ -9,6 +9,16 @@
     align-items: center;
     max-width: 100%;
 
+    @include respond-to(laptop) {
+        padding: rem(20) rem(80);
+    }
+
+    & img {
+        @include respond-to(laptop) {
+            max-width: rem(119);
+        }
+    }
+
     &__body {
         width: 100%;
         display: flex;
@@ -19,19 +29,31 @@
     &__menu-list {
         display: flex;
         gap: rem(30);
+
+        @include respond-to(laptop) {
+            gap: rem(24);
+        }
     }
 
     &__button {
         padding: rem(16) rem(24);
         border-radius: rem(8);
+
+        @include respond-to(laptop) {
+            padding: rem(12) rem(18);
+            border-radius: rem(6);
+        }
     }
 }
 
 .menu-list__link {
     color: $color-light;
     font-weight: 500;
-    border-radius: rem(8);
     transition: 0.33s;
+
+    @include respond-to(laptop) {
+        font-size: rem(14);
+    }
 
     &:hover {
         color: $color-accent;
@@ -40,6 +62,12 @@
 
 .is-active {
     font-weight: 600;
+    border-radius: rem(8);
     background-color: $color-grey-15;
     padding: rem(14) rem(28);
+
+    @include respond-to(laptop) {
+        border-radius: rem(6);
+        padding: rem(12) rem(22);
+    }
 }
