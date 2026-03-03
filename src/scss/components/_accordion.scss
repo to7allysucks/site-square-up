@@ -22,12 +22,12 @@
     &__summary {
         display: flex;
         flex-direction: row;
-        padding: rem(24) rem(40);
+        padding: rem(30) rem(40);
         cursor: pointer;
         font-size: rem(22);
 
         @include respond-to(laptop) {
-            padding: rem(30) rem(40);
+            padding: rem(24) rem(40);
             font-size: rem(18);
         }
     }
@@ -38,7 +38,7 @@
         gap: rem(30);
         align-items: center;
         font-weight: 500;
-        max-width: 75%;
+        max-width: rem(524);
         user-select: none;
     }
 

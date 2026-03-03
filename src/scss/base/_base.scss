@@ -1,5 +1,9 @@
 @use '../utilities' as *;
 
+html {
+    font-size: 16px;
+}
+
 * {
     font-size: rem(18);
     font-family: Barlow, sans-serif;

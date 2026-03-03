@@ -45,20 +45,24 @@
     }
 
     & input {
+        display: flex;
         background-color: transparent;
         transition: all 0.2s ease-in-out;
     }
 
     &__title {
+        display: flex;
         width: 100%;
         line-height: 150%;
     }
 
     &__description {
+        display: flex;
         font-weight: 300;
     }
 
     &__input-name {
+        display: flex;
         padding: rem(24) rem(40);
         border-radius: rem(8);
 
@@ -68,6 +72,7 @@
         }
 
         & .feedback-wrapper__title {
+            display: flex;
             margin-bottom: rem(20);
 
             @include respond-to(laptop) {
@@ -76,6 +81,7 @@
         }
         
         & input {
+            display: flex;
             padding: rem(6) 0;
             border-bottom: rem(1) solid $color-grey-20;
 
@@ -98,6 +104,7 @@
     }
     
     &__input-email {
+        display: flex;
         padding: rem(24) rem(40);
         border-radius: rem(8);
 
@@ -107,6 +114,7 @@
         }
 
         & .feedback-wrapper__title {
+            display: flex;
             margin-bottom: rem(20);
 
             @include respond-to(laptop) {
@@ -115,6 +123,7 @@
         }
 
         & input {
+            display: flex;
             padding: rem(6) 0;
             border-bottom: rem(1) solid $color-grey-20;
 
@@ -156,6 +165,7 @@
         }
 
         & .feedback-wrapper__title {
+            display: flex;
             margin-bottom: rem(40);
 
             @include respond-to(laptop) {
@@ -164,6 +174,7 @@
         }
 
         & input {
+            display: flex;
             appearance: none;
             -webkit-appearance: none;
             position: relative;
@@ -198,6 +209,7 @@
         }
 
         & .label-content {
+            display: flex;
             font-size: rem(18);
             font-weight: 300;
 
@@ -219,10 +231,12 @@
         }
 
         & .feedback-wrapper__title {
+            display: flex;
             margin-bottom: rem(14);
         }
 
         & .feedback-wrapper__description {
+            display: flex;
             margin-bottom: rem(40);
 
             @include respond-to(laptop) {
@@ -231,6 +245,7 @@
         }
 
         & input {
+            display: flex;
             cursor: grabbing;
             accent-color: $color-accent;
             border: none;
@@ -242,6 +257,7 @@
     }
 
     &__input-message {
+        display: flex;
         padding: rem(24) rem(40);
         border-radius: rem(8);
         grid-column: span 2;
@@ -252,10 +268,12 @@
         }
 
         & .feedback-wrapper__title {
+            display: flex;
             margin-bottom: rem(20);
         }
 
         & input {
+            display: flex;
             padding: rem(6) 0;
             border-bottom: 0.1rem solid $color-grey-20;
             margin-bottom: rem(40);
