@@ -1,6 +1,6 @@
 @use 'variables' as *;
 @use 'sass:math';
 
-@function rem($px) {
-    @return math.div($px, 16) * 1rem;
+@function rem($px, $context: 16) {
+    @return math.div($px, $context) * 1rem;
 }

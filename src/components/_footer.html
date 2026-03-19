@@ -11,26 +11,9 @@
             <li class="menu-list__item"><a href="contact.html" class="menu-list__link">Contact</a></li>
         </nav>
 
-        <div class="footer__soc1als-wrapper">
-            <p>Stay Connected</p>
-            <div class="footer__soc1als">
-                @@include('./_icon.html', {
-                    "img": "./assets/icons/facebook",
-                    "alt": "facebook",
-                    "icon--modifier": "icon--small",
-                })
-                @@include('./_icon.html', {
-                    "img": "./assets/icons/twitter",
-                    "alt": "twitter",
-                    "icon--modifier": "icon--small",
-                })
-                @@include('./_icon.html', {
-                    "img": "./assets/icons/linkedin",
-                    "alt": "lindedin",
-                    "icon--modifier": "icon--small",
-                })
-            </div>
-        </div>
+        @@include('./_soc1als-card.html', {
+        })
+
     </div>
     <span class="footer__line"></span>
     <div class="footer__copyright">

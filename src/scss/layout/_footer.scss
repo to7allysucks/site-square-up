@@ -30,31 +30,6 @@
 
     }
 
-    &__soc1als-wrapper {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: rem(14) rem(14) rem(14) rem(24);
-        border: $border-default;
-        border-radius: rem(12);
-        gap: rem(20);
-
-        @include respond-to(laptop) {
-            padding: rem(10) rem(10) rem(10) rem(20);
-            border-radius: rem(8);
-        }
-    }
-
-    &__soc1als {
-        display: flex;
-        flex-direction: row;
-        gap: rem(14);
-
-        @include respond-to(laptop) {
-            gap: rem(10);
-        }
-    }
-
     &__menu-list {
         display: flex;
         flex-direction: row;
