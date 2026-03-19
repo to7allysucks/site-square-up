@@ -1,0 +1,40 @@
+@use '../utilities' as *;
+
+.info-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: $border-default;
+
+    &--left {
+        display: flex;
+        width: 50%;
+        justify-content: flex-end;
+        padding: rem(50) rem(80) rem(50) 0;
+    }
+
+    &--right {
+        display: flex;
+        width: 50%;
+        justify-content: flex-start;
+        border-left: $border-default;
+        padding: rem(50) 0 rem(50) rem(80);
+    }
+
+    & p {
+        align-items: center;
+        font-size: rem(20);
+        font-weight: 500;
+        display: flex;
+        gap: rem(14);
+
+        & span {
+            font-size: rem(20);
+            font-weight: 500;
+            background: $color-grey-15;
+            padding: rem(12) rem(24);
+            align-items: center;
+            border-radius: rem(6);
+        }
+    }
+}
