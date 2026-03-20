@@ -1,0 +1,66 @@
+@use '../utilities' as *;
+
+.cta-section {
+    display: flex;
+    flex-direction: column;
+    padding: rem(80);
+    gap: rem(50);
+    border-left: $border-default;
+    border-right: $border-default;
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: rem(40);
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: rem(20);
+        justify-content: center;
+    }
+
+    &__title {
+        color: $color-grey-60;
+    }
+
+    &__description {
+        font-size: rem(18);
+        color: $color-grey-60;
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: rem(24) rem(40);
+        border: $border-default;
+        border-radius: rem(12);
+        background: rgb(36, 36, 36, 0.2);
+        backdrop-filter: blur(rem(6));
+
+        &-text {
+            font-size: rem(20);
+            color: $color-grey-60;
+            font-weight: 300;
+            align-self: center;
+
+            & span {
+                background: $color-grey-15;
+                padding: rem(14) rem(20);
+                font-size: rem(20);
+                color: $color-light;
+                border-radius: rem(8);
+                margin-left: rem(20);
+            }
+        }
+    }
+}
+
+.logo--big {
+    display: flex;
+    width: rem(150);
+}
