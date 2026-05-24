@@ -9,9 +9,21 @@
     padding-inline: rem(268);
 
     @include respond-to(laptop) {
-        padding-inline: rem(217);
+        padding-inline: rem(120);
     }
-    
+
+    @include respond-to(laptop-sm) {
+        padding-inline: rem(40);
+    }
+
+    @include respond-to(tablet) {
+        padding-inline: rem(24);
+    }
+
+    @include respond-to(mobile) {
+        padding-inline: rem(16);
+    }
+
     &__button {
         justify-self: center;
         padding: rem(18) rem(44);
@@ -21,11 +33,15 @@
             padding: rem(14) rem(36);
             border-radius: rem(6);
         }
+    }
 
-        &-form {
-            grid-column: span 2;
-            display: flex;
-            justify-content: center;
+    &__button-form {
+        grid-column: span 2;
+        display: flex;
+        justify-content: center;
+
+        @include respond-to(laptop-sm) {
+            grid-column: span 1;
         }
     }
 }
@@ -40,8 +56,24 @@
     padding: rem(80);
 
     @include respond-to(laptop) {
-        padding: rem(60);
-        gap: rem(30);
+        padding: rem(40);
+        gap: rem(24);
+    }
+
+    @include respond-to(laptop-sm) {
+        grid-template-columns: 1fr;
+        padding: rem(30);
+        gap: rem(20);
+    }
+
+    @include respond-to(tablet) {
+        padding: rem(20);
+        gap: rem(16);
+    }
+
+    @include respond-to(mobile) {
+        padding: rem(16);
+        gap: rem(12);
     }
 
     & input {
@@ -63,6 +95,7 @@
 
     &__input-name {
         display: flex;
+        flex-direction: column;
         padding: rem(24) rem(40);
         border-radius: rem(8);
 
@@ -71,17 +104,24 @@
             border-radius: rem(6);
         }
 
+        @include respond-to(laptop-sm) {
+            padding: rem(16) rem(20);
+        }
+
+        @include respond-to(tablet) {
+            padding: rem(12) rem(16);
+        }
+
         & .feedback-wrapper__title {
-            display: flex;
             margin-bottom: rem(20);
 
             @include respond-to(laptop) {
                 margin-bottom: rem(16);
             }
         }
-        
+
         & input {
-            display: flex;
+            width: 100%;
             padding: rem(6) 0;
             border-bottom: rem(1) solid $color-grey-20;
 
@@ -102,9 +142,10 @@
             }
         }
     }
-    
+
     &__input-email {
         display: flex;
+        flex-direction: column;
         padding: rem(24) rem(40);
         border-radius: rem(8);
 
@@ -113,8 +154,15 @@
             border-radius: rem(6);
         }
 
+        @include respond-to(laptop-sm) {
+            padding: rem(16) rem(20);
+        }
+
+        @include respond-to(tablet) {
+            padding: rem(12) rem(16);
+        }
+
         & .feedback-wrapper__title {
-            display: flex;
             margin-bottom: rem(20);
 
             @include respond-to(laptop) {
@@ -123,7 +171,7 @@
         }
 
         & input {
-            display: flex;
+            width: 100%;
             padding: rem(6) 0;
             border-bottom: rem(1) solid $color-grey-20;
 
@@ -150,10 +198,20 @@
         grid-template-columns: 1fr 1fr;
         width: 100%;
         gap: rem(24) rem(30);
+
+        @include respond-to(laptop-sm) {
+            gap: rem(20) rem(24);
+        }
+
+        @include respond-to(tablet) {
+            grid-template-columns: 1fr;
+            gap: rem(16);
+        }
     }
 
     &__input-check {
-        display: grid;
+        display: flex;
+        flex-direction: column;
         grid-column: span 2;
         padding: rem(40);
         border-radius: rem(12);
@@ -164,12 +222,24 @@
             border-radius: rem(8);
         }
 
+        @include respond-to(laptop-sm) {
+            grid-column: span 1;
+            padding: rem(20);
+        }
+
+        @include respond-to(tablet) {
+            padding: rem(16);
+        }
+
         & .feedback-wrapper__title {
-            display: flex;
             margin-bottom: rem(40);
 
             @include respond-to(laptop) {
                 margin-bottom: rem(30);
+            }
+
+            @include respond-to(laptop-sm) {
+                margin-bottom: rem(20);
             }
         }
 
@@ -180,6 +250,7 @@
             position: relative;
             height: rem(28);
             width: rem(28);
+            min-width: rem(28);
             border: rem(1) solid $color-grey-20;
             border-radius: rem(4);
             background-color: $color-grey-15;
@@ -187,6 +258,12 @@
             padding: rem(4);
             outline: none;
             transition: all 0.2s ease;
+
+            @include respond-to(mobile) {
+                height: rem(24);
+                width: rem(24);
+                min-width: rem(24);
+            }
 
             &:checked::after {
                 content: '';
@@ -216,11 +293,16 @@
             @include respond-to(laptop) {
                 font-size: rem(16);
             }
+
+            @include respond-to(mobile) {
+                font-size: rem(14);
+            }
         }
     }
 
     &__input-range {
         display: flex;
+        flex-direction: column;
         grid-column: span 2;
         padding: rem(40);
         border-radius: rem(12);
@@ -230,23 +312,34 @@
             border-radius: rem(8);
         }
 
+        @include respond-to(laptop-sm) {
+            grid-column: span 1;
+            padding: rem(20);
+        }
+
+        @include respond-to(tablet) {
+            padding: rem(16);
+        }
+
         & .feedback-wrapper__title {
-            display: flex;
             margin-bottom: rem(14);
         }
 
         & .feedback-wrapper__description {
-            display: flex;
             margin-bottom: rem(40);
 
             @include respond-to(laptop) {
                 margin-bottom: rem(30);
             }
+
+            @include respond-to(laptop-sm) {
+                margin-bottom: rem(20);
+            }
         }
 
         & input {
-            display: flex;
-            cursor: grabbing;
+            width: 100%;
+            cursor: pointer;
             accent-color: $color-accent;
             border: none;
 
@@ -258,6 +351,7 @@
 
     &__input-message {
         display: flex;
+        flex-direction: column;
         padding: rem(24) rem(40);
         border-radius: rem(8);
         grid-column: span 2;
@@ -267,16 +361,28 @@
             border-radius: rem(6);
         }
 
+        @include respond-to(laptop-sm) {
+            grid-column: span 1;
+            padding: rem(16) rem(20);
+        }
+
+        @include respond-to(tablet) {
+            padding: rem(12) rem(16);
+        }
+
         & .feedback-wrapper__title {
-            display: flex;
             margin-bottom: rem(20);
         }
 
         & input {
-            display: flex;
+            width: 100%;
             padding: rem(6) 0;
             border-bottom: 0.1rem solid $color-grey-20;
             margin-bottom: rem(40);
+
+            @include respond-to(laptop-sm) {
+                margin-bottom: rem(20);
+            }
 
             &:focus {
                 padding: rem(6);

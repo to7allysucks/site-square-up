@@ -48,6 +48,10 @@ main {
     @include respond-to(laptop) {
         padding-inline: rem(80);
     }
+
+    @include respond-to(mobile) {
+        padding-inline: rem(16);
+    }
 }
 
 h1, h2, h3,

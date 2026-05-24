@@ -8,12 +8,42 @@
     border-left: $border-default;
     border-right: $border-default;
 
+    @include respond-to(laptop) {
+        padding: rem(40);
+        gap: rem(30);
+    }
+
+    @include respond-to(laptop-sm) {
+        padding: rem(30);
+    }
+
+    @include respond-to(tablet) {
+        padding: rem(24);
+        gap: rem(24);
+    }
+
+    @include respond-to(mobile) {
+        padding: rem(16);
+        gap: rem(20);
+    }
+
     &__header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         gap: rem(40);
+
+        @include respond-to(laptop) {
+            gap: rem(24);
+        }
+
+        @include respond-to(tablet) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: rem(20);
+        }
     }
 
     &__text {
@@ -21,6 +51,11 @@
         flex-direction: column;
         gap: rem(20);
         justify-content: center;
+        align-items: flex-start;
+
+        @include respond-to(tablet) {
+            align-items: center;
+        }
     }
 
     &__title {
@@ -30,31 +65,108 @@
     &__description {
         font-size: rem(18);
         color: $color-grey-60;
+
+        @include respond-to(laptop) {
+            font-size: rem(16);
+        }
     }
 
     &__footer {
         display: flex;
-        flex-direction: row;
+        flex-flow: row nowrap;
+        align-items: center;
         justify-content: space-between;
+        gap: rem(20);
         padding: rem(24) rem(40);
         border: $border-default;
         border-radius: rem(12);
         background: rgb(36, 36, 36, 0.2);
         backdrop-filter: blur(rem(6));
 
+        @include respond-to(laptop) {
+            padding: rem(20) rem(30);
+            gap: rem(16);
+        }
+
+        @include respond-to(laptop-sm) {
+            padding: rem(16) rem(20);
+        }
+
+        @include respond-to(tablet) {
+            flex-direction: column;
+            align-items: stretch;
+            gap: rem(16);
+            padding: rem(20) rem(24);
+        }
+
+        @include respond-to(mobile) {
+            padding: rem(16);
+        }
+
         &-text {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: rem(12) rem(20);
             font-size: rem(20);
             color: $color-grey-60;
             font-weight: 300;
-            align-self: center;
+            flex: 1;
+            min-width: 0;
+            overflow-wrap: break-word;
+
+            @include respond-to(laptop) {
+                font-size: rem(18);
+                gap: rem(10) rem(16);
+            }
+
+            @include respond-to(laptop-sm) {
+                font-size: rem(16);
+                gap: rem(8) rem(12);
+            }
+
+            @include respond-to(tablet) {
+                width: 100%;
+                justify-content: center;
+                text-align: center;
+            }
 
             & span {
+                display: inline-flex;
+                align-items: center;
                 background: $color-grey-15;
                 padding: rem(14) rem(20);
                 font-size: rem(20);
                 color: $color-light;
                 border-radius: rem(8);
-                margin-left: rem(20);
+
+                @include respond-to(laptop) {
+                    font-size: rem(18);
+                    padding: rem(12) rem(16);
+                }
+
+                @include respond-to(laptop-sm) {
+                    font-size: rem(16);
+                    padding: rem(10) rem(14);
+                }
+
+                @include respond-to(tablet) {
+                    width: 100%;
+                    justify-content: center;
+                }
+            }
+        }
+
+        // Форма с кнопкой не должна сжиматься
+        & > form {
+            flex-shrink: 0;
+
+            @include respond-to(tablet) {
+                width: 100%;
+
+                & button {
+                    width: 100%;
+                }
             }
         }
     }
@@ -63,4 +175,15 @@
 .logo--big {
     display: flex;
     width: rem(150);
+    height: rem(150);
+
+    @include respond-to(laptop) {
+        width: rem(100);
+        height: rem(100);
+    }
+
+    @include respond-to(mobile) {
+        width: rem(80);
+        height: rem(80);
+    }
 }
