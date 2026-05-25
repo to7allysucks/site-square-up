@@ -54,6 +54,12 @@
             height: rem(62);
             padding: rem(16);
         }
+
+        @include respond-to(tablet) {
+            max-width: rem(52);
+            height: rem(52);
+            padding: rem(16);
+        }
     }
 
     &__title {
