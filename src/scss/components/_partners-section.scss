@@ -15,6 +15,17 @@
         padding: rem(30) 0;
     }
 
+    @include respond-to(laptop-sm) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: rem(15);
+    }
+
+    @include respond-to(tablet) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: rem(10);
+        padding: rem(20) 0;
+    }
+
     &__count {
         text-align: center;
         background-color: $color-background;
@@ -43,6 +54,25 @@
     padding: 0 rem(40);
     margin: rem(20) 0;
     max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
+    max-height: rem(40);
+    object-fit: contain;
+    width: auto;
+    justify-self: center;
+
+    @include respond-to(laptop) {
+        padding: 0 rem(30);
+        max-height: rem(36);
+    }
+
+    @include respond-to(laptop-sm) {
+        padding: 0 rem(40);
+        margin: rem(15) 0;
+        max-height: rem(32);
+    }
+
+    @include respond-to(tablet) {
+        padding: 0 rem(30);
+        margin: rem(10) 0;
+        max-height: rem(30);
+    }
 }
