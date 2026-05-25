@@ -49,6 +49,10 @@ main {
         padding-inline: rem(80);
     }
 
+    @include respond-to(laptop-sm) {
+        padding-inline: rem(24);
+    }
+
     @include respond-to(mobile) {
         padding-inline: rem(16);
     }

@@ -3,38 +3,115 @@
 .info-bar {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     border: $border-default;
+
+    @include respond-to(laptop-sm) {
+        flex-direction: column;
+    }
 
     &--left {
         display: flex;
         width: 50%;
         justify-content: flex-end;
-        padding: rem(50) rem(80) rem(50) 0;
+        align-items: center;
+        padding: rem(50) rem(80);
+        min-width: 0;
+
+        @include respond-to(laptop) {
+            padding: rem(20) rem(30);
+        }
+
+        @include respond-to(laptop-sm) {
+            width: 100%;
+            justify-content: center;
+            padding: rem(12) rem(16);
+            border-bottom: $border-default;
+        }
+
+        @include respond-to(mobile) {
+            padding: rem(10) rem(12);
+        }
     }
 
     &--right {
         display: flex;
         width: 50%;
         justify-content: flex-start;
+        align-items: center;
         border-left: $border-default;
-        padding: rem(50) 0 rem(50) rem(80);
+        padding: rem(50) rem(80);
+        min-width: 0;
+
+        @include respond-to(laptop) {
+            padding: rem(20) rem(30);
+        }
+
+        @include respond-to(laptop-sm) {
+            width: 100%;
+            justify-content: center;
+            padding: rem(12) rem(16);
+            border-left: none;
+        }
+
+        @include respond-to(mobile) {
+            padding: rem(10) rem(12);
+        }
     }
 
     & p {
-        align-items: center;
         font-size: rem(20);
         font-weight: 500;
         display: flex;
+        align-items: center;
         gap: rem(14);
+        line-height: 150%;
+        white-space: nowrap;
+        min-width: 0;
+
+        @include respond-to(laptop) {
+            font-size: rem(16);
+            gap: rem(10);
+        }
+
+        @include respond-to(laptop-sm) {
+            font-size: rem(14);
+            gap: rem(8);
+            white-space: normal;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+
+        @include respond-to(mobile) {
+            font-size: rem(12);
+            gap: rem(6);
+        }
 
         & span {
             font-size: rem(20);
             font-weight: 500;
             background: $color-grey-15;
             padding: rem(12) rem(24);
-            align-items: center;
             border-radius: rem(6);
+            line-height: 150%;
+            white-space: nowrap;
+
+            @include respond-to(laptop) {
+                font-size: rem(16);
+                padding: rem(8) rem(16);
+            }
+
+            @include respond-to(laptop-sm) {
+                font-size: rem(14);
+                padding: rem(6) rem(12);
+                white-space: normal;
+            }
+
+            @include respond-to(mobile) {
+                font-size: rem(12);
+                padding: rem(4) rem(10);
+            }
         }
     }
 }
