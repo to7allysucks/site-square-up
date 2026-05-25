@@ -17,6 +17,16 @@
     })
 
     <main id="swup" class="transition-fade">
+        @@include('../components/_banner.html', {
+        "type": "wave-dark-sharp",
+        "title": "Our Works",
+        "text": "Discover a portfolio of visually stunning and strategically crafted digital projects that showcase our creativity and expertise.",
+        })
+        @@include('./_section-intro.html', {
+        "title": "At SquareUp",
+        "desc": "We have had the privilege of working with a diverse range of clients and delivering exceptional digital products that drive success.",
+        "tag": "Here are ten examples of our notable works:",
+        })
         @@include('./_big-banner.html', {
         "type": "wave-big",
         "title": "Let us Bring your Ideas to Life in the Digital World.",
