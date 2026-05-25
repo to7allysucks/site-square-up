@@ -11,8 +11,18 @@
     gap: rem(50);
 
     @include respond-to(laptop) {
-        padding: rem(40) rem(80);
+        padding: rem(40) rem(60);
         gap: rem(40);
+    }
+
+    @include respond-to(laptop-sm) {
+        padding: rem(30) rem(40);
+        gap: rem(30);
+    }
+
+    @include respond-to(mobile) {
+        padding: rem(24) rem(16);
+        gap: rem(24);
     }
 
     &__inner {
@@ -21,22 +31,53 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        gap: rem(30);
+
+        @include respond-to(laptop) {
+            gap: rem(20);
+        }
+
+        @include respond-to(laptop-sm) {
+            flex-direction: column;
+            gap: rem(24);
+        }
+
+        @include respond-to(mobile) {
+            gap: rem(20);
+        }
 
         & img {
             @include respond-to(laptop) {
                 max-width: rem(119);
             }
-        }
 
+            @include respond-to(laptop-sm) {
+                max-width: rem(140);
+            }
+        }
+    }
+
+    &__brand {
+        display: flex;
+        align-items: center;
     }
 
     &__menu-list {
         display: flex;
-        flex-direction: row;
+        flex-flow: row wrap;
         gap: rem(30);
+        justify-content: center;
 
         @include respond-to(laptop) {
-            padding: rem(20);
+            gap: rem(20);
+        }
+
+        @include respond-to(laptop-sm) {
+            gap: rem(16);
+        }
+
+        @include respond-to(mobile) {
+            gap: rem(12);
         }
     }
 
@@ -49,16 +90,43 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         width: 100%;
+        gap: rem(20);
+
+        @include respond-to(laptop-sm) {
+            flex-direction: column;
+            align-items: center;
+            gap: rem(24);
+            border-top: $border-default;
+            padding-top: rem(24);
+        }
+
+        @include respond-to(mobile) {
+            gap: rem(20);
+            padding-top: rem(20);
+        }
     }
 
     &__contacts {
         display: flex;
-        flex-direction: row;
+        flex-flow: row wrap;
         gap: rem(30);
+        justify-content: flex-start;
 
         @include respond-to(laptop) {
-            gap: rem(22);
+            gap: rem(20);
+        }
+
+        @include respond-to(laptop-sm) {
+            flex-direction: column;
+            align-items: center;
+            gap: rem(24);
+            justify-content: center;
+        }
+
+        @include respond-to(mobile) {
+            gap: rem(20);
         }
     }
 }
@@ -74,6 +142,15 @@
     @include respond-to(laptop) {
         gap: rem(6);
         padding-bottom: rem(12);
+    }
+
+    @include respond-to(laptop-sm) {
+        width: 100%;
+        justify-content: center;
+    }
+
+    @include respond-to(mobile) {
+        padding-bottom: rem(10);
     }
 
     & img {

@@ -25,7 +25,6 @@
         gap: rem(10);
         flex-direction: column;
         align-items: center;
-        border: none;
     }
 
     @include respond-to(mobile) {

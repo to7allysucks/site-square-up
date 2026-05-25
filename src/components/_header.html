@@ -2,7 +2,15 @@
     <div class="header__body">
         <a href="@@link">
             <img src="@@img.svg" alt="@@alt" draggable="false">
-        </a>    
+        </a>
+
+        <input type="checkbox" id="header__toggle" class="header__toggle">
+        <label for="header__toggle" class="header__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
         <nav class="header__menu-list">
             <li class="menu-list__item"><a href="index.html" class="menu-list__link @@home">Home</a></li>
             <li class="menu-list__item"><a href="services.html" class="menu-list__link @@services">Services</a></li>
@@ -12,11 +20,13 @@
             <li class="menu-list__item"><a href="careers.html" class="menu-list__link @@careers">Careers</a></li>
         </nav>
 
-        @@include('./_button.html', {
-            "title": "Contact Us",
-            "link": "contact.html",
-            "block__element": "header__button",
-            "block--modifier": "button--accent",
-            })
+        <div class="header__contact-form">
+            @@include('./_button.html', {
+                "title": "Contact Us",
+                "link": "contact.html",
+                "block__element": "header__button",
+                "block--modifier": "button--accent",
+                })
+        </div>
     </div>
 </header>

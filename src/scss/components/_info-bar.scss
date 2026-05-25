@@ -10,6 +10,12 @@
         flex-direction: column;
     }
 
+    & .soc1als-wrapper {
+        @include respond-to(tablet) {
+            border: none;
+        }
+    }
+
     &--left {
         display: flex;
         width: 50%;
