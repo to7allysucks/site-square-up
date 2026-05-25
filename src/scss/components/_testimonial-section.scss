@@ -4,4 +4,8 @@
     display: grid;
     width: 100%;
     grid-template-columns: 50% 50%;
+
+    @include respond-to(tablet) {
+        grid-template-columns: 1fr;
+    }
 }

@@ -14,6 +14,10 @@
     border-left: $border-default;
     border-right: $border-default;
 
+    @include respond-to(laptop) {
+            padding-top: rem(80);
+        }
+
     &__button {
         padding: rem(18) rem(28);
         border-radius: rem(10);
@@ -22,6 +26,7 @@
             padding: rem(14) rem(20);
             border-radius: rem(8);
         }
+
     }
 
     &__promo {
@@ -41,6 +46,11 @@
             padding: rem(18) rem(30);
             margin-bottom: rem(40);
         }
+
+        @include respond-to(tablet) {
+            padding: rem(18) rem(20);
+            margin-bottom: rem(30);
+        }
     }
 }
 
@@ -54,6 +64,13 @@
 
     @include respond-to(laptop) {
         font-size: rem(18);
+    }
+
+    @include respond-to(tablet) {
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: rem(16);
+        line-height: 1.5;
     }
 }
 
@@ -69,5 +86,12 @@
         font-size: rem(18);
         padding: rem(8) rem(10);
         border-radius: rem(6);
+    }
+
+    @include respond-to(tablet) {
+        background: none;
+        padding: 0;
+        color: $color-grey-60;
+        font-size: rem(16);
     }
 }

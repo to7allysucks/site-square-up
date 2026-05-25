@@ -12,17 +12,35 @@
         padding: rem(80) rem(60);
     }
 
+    @include respond-to(laptop-sm) {
+        padding: rem(60) rem(30);
+    }
+
+    @include respond-to(tablet) {
+        padding: rem(40) rem(24);
+    }
+
     &__button {
         display: flex;
         white-space: nowrap;
         align-self: end;
         padding: rem(18) rem(20);
         border-radius: rem(8);
-        width: 100%;
+        width: auto;
+        flex-shrink: 0;
 
         @include respond-to(laptop) {
             padding: rem(16) rem(14);
             border-radius: rem(6);
+        }
+
+        @include respond-to(laptop-sm) {
+            display: none;
+        }
+
+
+        @include respond-to(tablet) {
+            display: none;
         }
 
     }
@@ -35,6 +53,16 @@
             border-radius: rem(6);
             margin-right: rem(12);
         }
+
+        @include respond-to(laptop-sm) {
+            width: rem(50);
+            height: rem(50);
+        }
+
+        @include respond-to(mobile) {
+            width: rem(40);
+            height: rem(40);
+        }
     }
 
     &__title {
@@ -45,6 +73,11 @@
 
         @include respond-to(laptop) {
             margin-bottom: rem(20);
+        }
+
+        @include respond-to(tablet) {
+            max-width: 100%;
+            font-size: rem(18);
         }
 
         &::selection {
@@ -61,6 +94,11 @@
         @include respond-to(laptop) {
             margin-bottom: rem(30);
         }
+
+        @include respond-to(tablet) {
+            margin-bottom: rem(20);
+            font-size: rem(14);
+        }
     }
 
 
@@ -71,10 +109,17 @@
         padding: rem(20);
         background: rgb(36, 36, 36, 0.2);
         justify-content: space-between;
+        align-items: center;
 
         @include respond-to(laptop) {
             border-radius: rem(6);
             padding: rem(14);
+        }
+
+        @include respond-to(tablet) {
+            padding: rem(12);
+            flex-wrap: wrap;
+            gap: rem(8);
         }
 
         &__content {
@@ -82,17 +127,28 @@
             flex-direction: row;
             align-items: center;
             max-width: 100%;
+            flex: 1;
+            min-width: 0;
         }
 
         &__text {
             max-width: 100%;
-            gap: rem(2)
+            gap: rem(2);
+            min-width: 0;
+            overflow: hidden;
         }
 
         &__description {
             white-space: nowrap;
             color: $color-grey-90;
             font-weight: 300;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            @include respond-to(tablet) {
+                white-space: normal;
+                font-size: rem(14);
+            }
         }
     }
 }

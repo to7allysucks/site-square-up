@@ -5,20 +5,33 @@
     grid-template-columns: 50% 50%;
     max-width: 100%;
 
+    @include respond-to(tablet) {
+        grid-template-columns: 1fr;
+    }
+
     &__frame {
         padding: rem(80);
 
         @include respond-to(laptop) {
             padding: rem(60);
         }
+
+        @include respond-to(tablet) {
+            padding: rem(40) rem(20);
+        }
     }
 
     &__description {
         margin-top: rem(40);
         font-weight: 300;
+        max-width: 100%;
 
         @include respond-to(laptop) {
             margin-top: rem(30);
+        }
+
+        @include respond-to(tablet) {
+            margin-top: rem(20);
         }
     }
 }

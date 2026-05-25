@@ -72,6 +72,14 @@ h1, .h1 {
         margin-bottom: rem(30);
     }
 
+    @include respond-to(tablet) {
+        font-size: rem(38);
+    }
+
+    @include respond-to(mobile) {
+        font-size: rem(34);
+    }
+
     &::selection {
         color: $color-accent;
     }
