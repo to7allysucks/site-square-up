@@ -23,7 +23,8 @@
         border: $border-default;
         border-radius: rem(100);
         position: absolute;
-        left: calc(50% - 8.9375rem);
+        left: 50%;
+        transform: translateX(-50%);
         top: calc(-2.0625rem);
 
         @include respond-to(laptop) {
@@ -35,6 +36,7 @@
 .count__text {
     width: 100%;
     font-weight: 500;
+    white-space: nowrap;
 }
 
 .partner-card {
